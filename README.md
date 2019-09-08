@@ -2,22 +2,23 @@
 
 ## Linux
 
-| Tables        | Are           |
-| ------------- |:-------------:|
-| df -h /       | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+| Command        | Description          |
+| ------------- |-------------|
+| `df -h /`       | Show total free disk space |
+| `ls \| wc -l`    | Number of files in folder      |
+| `rm -r mydir` | Delete folder      |
 
 
 ## Github
 
-| Tables        | Are           |
-| ------------- |:-------------:|
-| col 3 is      | right-aligned |
+| Command        | Description           |
+| ------------- |-------------|
+| `git rm --cached <filename>`<br> `commit and push`| remove file on origin master  |
+|     |       |
 
 
 ## VS Code
 
-| Tables        | Are           |
-| ------------- |:-------------:|
-| col 3 is      | right-aligned |
+| Command        | Description           |
+| ------------- |-------------|
+| `option-shift-F`     | format file (e.g. with Black) |
