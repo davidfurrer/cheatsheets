@@ -7,6 +7,7 @@
 | `df -h /`       | Show total free disk space |
 | `ls \| wc -l`    | Number of files in folder      |
 | `rm -r mydir` | Delete folder      |
+| `cp -avr home/sourcedir home/destinydir` | copy folder with all content |
 
 
 ## Github
