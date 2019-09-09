@@ -8,6 +8,7 @@
 | `ls \| wc -l`    | Number of files in folder      |
 | `rm -r mydir` | Delete folder      |
 | `cp -avr home/sourcedir home/destinydir` | copy folder with all content |
+| `echo hello > $(date +%Y%m%dT%H%M%S).txt`| saves output of command in file <br> with timestamp as name| 
 
 
 ## Github
