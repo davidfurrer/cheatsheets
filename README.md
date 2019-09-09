@@ -7,15 +7,16 @@
 | `df -h /`       | Show total free disk space |
 | `ls \| wc -l`    | Number of files in folder      |
 | `rm -r mydir` | Delete folder      |
-| `cp -avr home/sourcedir home/destinydir` | copy folder with all content |
-| `echo hello > $(date +%Y%m%dT%H%M%S).txt`| saves output of command in file <br> with timestamp as name| 
+| `cp -avr home/sourcedir home/destinydir` | Copy folder with all content |
+| `echo hello > $(date +%Y%m%dT%H%M%S).txt`| Saves output of command in file <br> with timestamp as name| 
+| `mkdir -p folder/{1..10}`|Make 10 subfolders|
 
 
 ## Github
 
 | Command        | Description           |
 | ------------- |-------------|
-| `git rm --cached <filename>`<br> `commit and push`| remove file on origin master  |
+| `git rm --cached <filename>`<br> `commit and push`| Remove file on origin master  |
 |     |       |
 
 
@@ -23,4 +24,12 @@
 
 | Command        | Description           |
 | ------------- |-------------|
-| `option-shift-F`     | format file (e.g. with Black) |
+| `option-shift-F`     | Format file (e.g. with Black) |
+
+
+## Python
+
+| Command        | Description           |
+| ------------- |-------------|
+| `python -W ignore script.py`     | Run python script without warnings |
+
