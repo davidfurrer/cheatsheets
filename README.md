@@ -24,7 +24,12 @@
 
 | Command        | Description           |
 | ------------- |-------------|
+|`command-P`| Opens search palette|
+|`command-shift-P`| Opens command palette|
+|`command-shift-O`| Search by method/function/class |
 | `option-shift-F`     | Format file (e.g. with Black) |
+|`:32 (in search)`| Jump to line 32 |
+
 
 
 ## Python
