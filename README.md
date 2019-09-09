@@ -29,6 +29,7 @@
 |`command-shift-O`| Search by method/function/class |
 | `option-shift-F`     | Format file (e.g. with Black) |
 |`control-shift-^`| Open terminal|
+|`command-J`| Collapse/ bring back terminal|
 |`:32 (in search)`| Jump to line 32 |
 
 
@@ -38,4 +39,10 @@
 | Command        | Description           |
 | ------------- |-------------|
 | `python -W ignore script.py`     | Run python script without warnings |
+
+## Chrome
+
+| Command        | Description           |
+| ------------- |-------------|
+| `command-R`     | Refresh page |
 
