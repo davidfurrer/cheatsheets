@@ -28,6 +28,7 @@
 |`command-shift-P`| Opens command palette|
 |`command-shift-O`| Search by method/function/class |
 | `option-shift-F`     | Format file (e.g. with Black) |
+|`control-shift-^`| Open terminal|
 |`:32 (in search)`| Jump to line 32 |
 
 
