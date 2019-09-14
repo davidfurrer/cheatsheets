@@ -46,3 +46,9 @@
 | ------------- |-------------|
 | `command-R`     | Refresh page |
 
+## AWS
+
+| Command        | Description           |
+| ------------- |-------------|
+| `scp -i ssh-key-file file name@ip:~/`     | Copy file unto remote |
+
