@@ -18,6 +18,7 @@
 | Command        | Description           |
 | ------------- |-------------|
 | `git rm --cached <filename>`<br> `commit and push`| Remove file on origin master  |
+| `git log --oneline`| print logs only as one line |
 |     |       |
 
 
