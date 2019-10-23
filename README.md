@@ -5,7 +5,7 @@
 | Command        | Description          |
 | ------------- |-------------|
 | `df -h /`       | Show total free disk space |
-| `du -h folder`       | Show size of folder |
+| `du -sh folder`       | Show size of folder |
 | `ls \| wc -l`    | Number of files in folder      |
 | `rm -r mydir` | Delete folder      |
 | `cp -avr home/sourcedir home/destinydir` | Copy folder with all content |
