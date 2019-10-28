@@ -71,3 +71,12 @@
 | Command        | Description           |
 | ------------- |-------------|
 | `pipenv install`| uses Pipfile and installs listed packages |
+
+
+## docker
+
+| Command        | Description           |
+| ------------- |-------------|
+| `docker exec -it <container name> /bin/bash`| ssh into running container |
+
+
