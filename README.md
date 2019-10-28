@@ -54,3 +54,13 @@
 | ------------- |-------------|
 | `scp -i ssh-key-file file name@ip:~/`     | Copy file unto remote |
 
+
+## screen
+
+| Command        | Description           |
+| ------------- |-------------|
+| `screen`     | start session |
+| `screen -ls`     | show running sessions |
+| `screen -r`     | reattach session |
+| `Ctrl + a + d`     | detach from session |
+
