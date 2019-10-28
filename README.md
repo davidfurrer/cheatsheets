@@ -64,3 +64,10 @@
 | `screen -r`     | reattach session |
 | `Ctrl + a + d`     | detach from session |
 
+
+
+## pipenv
+
+| Command        | Description           |
+| ------------- |-------------|
+| `pipenv install`| uses Pipfile and installs listed packages |
