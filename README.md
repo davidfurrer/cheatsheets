@@ -78,5 +78,7 @@
 | Command        | Description           |
 | ------------- |-------------|
 | `docker exec -it <container name> /bin/bash`| ssh into running container |
+| `docker rm $(docker ps -a -q)`| delete all stopped containers |
+
 
 
