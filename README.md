@@ -11,6 +11,15 @@
 | `cp -avr home/sourcedir home/destinydir` | Copy folder with all content |
 | `echo hello > $(date +%Y%m%dT%H%M%S).txt`| Saves output of command in file <br> with timestamp as name| 
 | `mkdir -p folder/{1..10}`|Make 10 subfolders|
+| `ctrl + z`|suspend running process|
+| `ps f`|show processes|
+| `fg`|resume stopped process (in foreground)|
+| `bg`|resume stopped process (in background)|
+| `jobs`|show jobs|
+| `kill <PID>`|kill process with ID <PID>|
+| `sleep 360 &`|starts sleep command in background|
+| `cat /etc/os-release`|show which linux distro is installed|
+
 
 
 ## Github
