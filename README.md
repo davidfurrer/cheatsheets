@@ -28,7 +28,7 @@
 | ------------- |-------------|
 | `git rm --cached <filename>`<br> `commit and push`| Remove file on origin master  |
 | `git log --oneline`| print logs only as one line |
-|     |       |
+| `git config --global --edit`  | change global default of comitter (name, email)      |
 
 
 ## VS Code
@@ -89,5 +89,14 @@
 | `docker exec -it <container name> /bin/bash`| ssh into running container |
 | `docker rm $(docker ps -a -q)`| delete all stopped containers |
 | `docker system df`| show disk usage |
+
+
+## vim
+
+| Command        | Description           |
+| ------------- |-------------|
+| `i`| insert aka edit |
+| `:q`| quit |
+| `:wq`| save and exit |
 
 
