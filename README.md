@@ -30,6 +30,9 @@
 | `git rm --cached <filename>`<br> `commit and push`| Remove file on origin master  |
 | `git log --oneline`| print logs only as one line |
 | `git config --global --edit`  | change global default of comitter (name, email)      |
+| `git branch <branch-name>`| create new branch |
+| `git checkout <branch-name>`| switch to <branch-name> (can also be a remote one) |
+| `git checkout -b <branch-name>`| create new branch <branch-name> and switch to it |
 
 
 ## VS Code
