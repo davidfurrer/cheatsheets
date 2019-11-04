@@ -22,6 +22,7 @@
 
 
 
+
 ## Github
 
 | Command        | Description           |
@@ -35,6 +36,14 @@
 
 | Command        | Description           |
 | ------------- |-------------|
+| `option-shift-F`     | format file (e.g. with Black) |
+| `cmd-X`              | cut a line |
+| `shift-cmd-K`        | delete a line |
+| `cmd-L`              | select the line |
+| `cmd-Enter`          | insert a new line below it |
+| `shift-cmd-Enter`    | insert a new line above it |
+| `⌥↑ and ⌥↓`          | move the line up/down |
+| `shift-cmd-7`        | comment line|
 |`command-P`| Opens search palette|
 |`command-shift-P`| Opens command palette|
 |`command-shift-O`| Search by method/function/class |
