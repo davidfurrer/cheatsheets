@@ -33,7 +33,9 @@
 | `git branch <branch-name>`| create new branch |
 | `git checkout <branch-name>`| switch to <branch-name> (can also be a remote one) |
 | `git checkout -b <branch-name>`| create new branch <branch-name> and switch to it |
-
+| `git push origin --delete <branch-name>`| delete remote branch |
+| `git branch -d <branch-name>`| delete local branch |
+ 
 
 ## VS Code
 
