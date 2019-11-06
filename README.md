@@ -113,4 +113,10 @@
 | `:q`| quit |
 | `:wq`| save and exit |
 
+## sql
+
+| Command        | Description           |
+| ------------- |-------------|
+| `pd.read_sql_table('table_name', 'sqlite:///db_file.sql')`| read sql data base |
+
 
