@@ -20,6 +20,9 @@
 | `sleep 360 &`|starts sleep command in background|
 | `cat /etc/os-release`|show which linux distro is installed|
 |`rwx, 421 (e.g. chmod 600 <file>)`| change permissions |
+|`mv/cp <old> <new>`| rename/copy  file |
+|`ls *.mp3`| list all mp3 |
+
 
 
 
