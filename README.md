@@ -56,6 +56,7 @@
 |`control-shift-^`| Open terminal|
 |`command-J`| Collapse/ bring back terminal|
 |`:32 (in search)`| Jump to line 32 |
+|`rwx, 421 (e.g. chmod 600 <file>)`| change permissions |
 
 
 
