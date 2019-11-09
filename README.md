@@ -19,7 +19,7 @@
 | `kill <PID>`|kill process with ID <PID>|
 | `sleep 360 &`|starts sleep command in background|
 | `cat /etc/os-release`|show which linux distro is installed|
-
+|`rwx, 421 (e.g. chmod 600 <file>)`| change permissions |
 
 
 
@@ -56,7 +56,6 @@
 |`control-shift-^`| Open terminal|
 |`command-J`| Collapse/ bring back terminal|
 |`:32 (in search)`| Jump to line 32 |
-|`rwx, 421 (e.g. chmod 600 <file>)`| change permissions |
 
 
 
