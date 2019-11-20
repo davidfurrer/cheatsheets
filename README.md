@@ -45,6 +45,15 @@
 | `git stash drop stash@{0}`| deletes stash from list | 
 | `git stash, git checkout <branch-name>, git stash pop`| stashes carry over to other branches | 
 
+## Github: Fixing common mistakes
+
+| Command        | Description           |
+| ------------- |-------------|
+| `git checkout file.py`| undo changes up to last commit of file.py  |
+| `git commit --amend -m 'corrected message'`| correct wrong commit message of last commit |
+| `git add file.py, git commit --amend`| forgot to add file.py to last commit  |
+| `git checkout <correct branch>, git cherry-pick <commit hash>, git checkout <wrong branch>, git reset <commit hash before wrong one>`| commited on wrong branch  |
+
 ## VS Code
 
 | Command        | Description           |
