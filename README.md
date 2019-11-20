@@ -38,7 +38,11 @@
 | `git checkout -b <branch-name>`| create new branch <branch-name> and switch to it |
 | `git push origin --delete <branch-name>`| delete remote branch |
 | `git branch -d <branch-name>`| delete local branch |
- 
+| `git stash save 'message'| stash changes (undoes everything up to last commit -> git status will now say nothing to commit) | 
+| `git stash list`| list stashes | 
+| `git stash apply stash@{0}`| restore status of stash, keeps stash |
+| `git stash pop`| same as git stash apply stash@{0} but drops stash, takes first entry in list (most recent, which has number 0)| 
+
 
 ## VS Code
 
