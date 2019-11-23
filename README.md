@@ -46,7 +46,9 @@
 | `git stash, git checkout <branch-name>, git stash pop`| stashes carry over to other branches | 
 | `git rebase -i HEAD~2`| rewrite last commit message | 
 | `git rebase -i HEAD~2, edit, git reset HEAD^, add/commit, git rebase --continue`| split commit message | 
-| `git tag v1.0`| rewrite last commit message | 
+| `git tag v1.0`| make tag/release |
+| `git push origin v1.0`| push release |
+
 
 
 
