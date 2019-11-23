@@ -15,6 +15,6 @@ bare repo: repository
 
 | Command        | Description          |
 | ------------- |-------------|
-| `git clone --bare <repo>`       | Clone repo as bare repo (.git folder) |
-| `git clone <bare repo>`       | Clone repo as bare repo (no .git folder) |
-| `git remote -v`       | remote is bare repo |
+| `git clone --bare <bare repo>`       | Clone repo as bare repo (.git folder) |
+| `git clone <bare repo>`       | Clone bare repo |
+| `git remote -v`       | shows that bare repo is remote|
