@@ -48,6 +48,7 @@
 | `git rebase -i HEAD~2, edit, git reset HEAD^, add/commit, git rebase --continue`| split commit message | 
 | `git tag v1.0`| make tag/release |
 | `git push origin v1.0`| push release |
+| `git checkout -b <branch name> v1.0`| checkout release |
 
 
 
