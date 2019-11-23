@@ -1,3 +1,5 @@
 import numpy
 
-print('test')
+print("test")
+
+assert 1 == 1
