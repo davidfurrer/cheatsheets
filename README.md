@@ -44,6 +44,9 @@
 | `git stash pop`| same as git stash apply stash@{0} but drops stash, takes first entry in list (most recent, which has number 0)| 
 | `git stash drop stash@{0}`| deletes stash from list | 
 | `git stash, git checkout <branch-name>, git stash pop`| stashes carry over to other branches | 
+| `git rebase -i HEAD~2`| rewrite last commit message | 
+| `git rebase -i HEAD~2, edit, git reset HEAD^, add/commit, git rebase --continue`| split commit message | 
+| `git tag v1.0`| rewrite last commit message | 
 
 
 
