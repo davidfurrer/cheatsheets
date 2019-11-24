@@ -49,7 +49,8 @@
 | `git tag v1.0`| make tag/release |
 | `git push origin v1.0`| push release |
 | `git checkout -b <branch name> v1.0`| checkout release |
-
+| `git merge origin/master`| merge origin/master |
+| `git pull origin`| same as git fetch origin, git merge origin/master |
 
 
 
