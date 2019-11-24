@@ -145,6 +145,7 @@
 
 | Command        | Description           |
 | ------------- |-------------|
-| `pd.read_sql_table('table_name', 'sqlite:///db_file.sql')`| read sql data base |
+| `pd.read_sql_table('table_name', 'sqlite:///db_file.sql')`| read sql database table |
+| `engine = create_engine('sqlite://', echo=False), df.to_sql('users', con=engine)`| save df as sql data base |
 
 
