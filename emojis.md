@@ -1,4 +1,4 @@
-# Emojis
+# Em:angel:jis
 
 | Shortcode        | HTML hex          | Emoji          |
 | ------------- |-------------| -------------|
