@@ -6,15 +6,12 @@ emojis = [
 
 header = """
 | Command        | Emoji          | 
-| ------------- |-------------| 
-"""
+| ------------- |-------------| """
 
 markdown_all = """"""
 
 for a, b in emojis:
-    markdown_ = f"""
-    | {a}       | {b} | 
-    """
+    markdown_ = f"""\n| {a}       | {b} | """
     markdown_all += markdown_
 
 with open("emoji-list.md", "w") as f:
