@@ -6,7 +6,7 @@ emojis = [
 ]
 #print(emojis)
 
-text = wikipedia.summary("Moon", sentences=5)
+text = wikipedia.summary("Moon", sentences=50)
 
 d=[x if x.lower() not in emojis else f':{x.lower()}:' for x in text.split(' ')]
 s=' '.join(d)
