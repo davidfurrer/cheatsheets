@@ -32,6 +32,8 @@
 | `apropos time`                                | show commands related to time                                          |
 | `man time`                                | show manual for time                                          |
 | `cat >> file, ctrl-d to exit`                                | opens editor and saves what you write in file                                          |
+| `cat file1 file2`                                | concatenates files                                          |
+| `more/less file2`                                | pager/scroller for file2                                          |
   
   
   
