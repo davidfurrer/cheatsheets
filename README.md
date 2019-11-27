@@ -21,9 +21,21 @@
 | `cat /etc/os-release`                     | show which linux distro is installed                        |
 | `rwx, 421 (e.g. chmod 600 <file>)`        | change permissions                                          |
 | `mv/cp <old> <new>`                       | rename/copy  file                                           |
-| `ls *.mp3`                                | list all mp3                                                |
-
-
+| `ls/rm *.mp3`                                | list/delete all mp3                                                |
+| `cd`                                | same as  `cd ~`                                              |
+| `pushd` <folder>, `popd`                                  | go into folder, go back where you came from                                            |
+| `file song.mp3`                                | shows type of file, here: mp3                                         |
+| `locate <file name>`                                | find <file name>                                           |
+| `sudo updatedb `                                | update db for locate                                        |
+| `cal`                                | show calender                                           |
+| `whatis scp`                                | return: secure copy (remote file copy program)                                         |
+| `apropos time`                                | show commands related to time                                          |
+| `man time`                                | show manual for time                                          |
+| `cat >> file, ctrl-d to exit`                                | opens editor and saves what you write in file                                          |
+  
+  
+  
+  
 
 
 ## Github
