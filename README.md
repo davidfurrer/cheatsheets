@@ -153,5 +153,5 @@
 
 | Command                                     | Description | Result                                                     |
 | ------------------------------------------- | ----------- | ---------------------------------------------------------- |
-| `![](https://giphy.com/gifs/WZ4M8M2VbauEo)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
+| `![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
 
