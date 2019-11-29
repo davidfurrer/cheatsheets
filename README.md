@@ -168,4 +168,13 @@
 | Command                                     | Description | Result                                                     |
 | ------------------------------------------- | ----------- | ---------------------------------------------------------- |
 | `![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
+| `<details>
+  <summary>Demo</summary>
+<a href="https://drive.google.com/uc?export=view&id=11fxb0fec8Fuy7tDqFeZYRDHFgvnCaMHv"><img src="https://drive.google.com/uc?export=view&id=1hdM9_hMtFimvwPmZIGsFbmUTbFtn0tWU" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+</details>`   | expandable field | <details>
+  <summary>Demo</summary>
+<a href="https://drive.google.com/uc?export=view&id=11fxb0fec8Fuy7tDqFeZYRDHFgvnCaMHv"><img src="https://drive.google.com/uc?export=view&id=1hdM9_hMtFimvwPmZIGsFbmUTbFtn0tWU" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+</details>  |
+
+
 
