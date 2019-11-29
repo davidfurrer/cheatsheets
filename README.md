@@ -156,6 +156,14 @@
 | `:q`    | quit            |
 | `:wq`   | save and exit   |
 
+## datetime (python)
+
+| Command | Description     |
+| ------- | --------------- |
+| `datetime.datetime.strptime(d, "%Y-%m-%d_%H-%M-%S")`     | convert string (d) to datetime object  |
+| `dt.strftime("%Y-%m-%d_%H-%M-%S")`    |  convert datetime object (dt) to string         |
+
+
 ## sql
 
 | Command                                                                           | Description              |
