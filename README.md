@@ -168,10 +168,4 @@
 | Command                                     | Description | Result                                                     |
 | ------------------------------------------- | ----------- | ---------------------------------------------------------- |
 | `![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
-|    | expandable field | <details>
-  <summary>Demo</summary>
-![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)
-</details>  |
-
-
 
