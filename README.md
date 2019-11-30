@@ -136,6 +136,7 @@
 | Command          | Description                               |
 | ---------------- | ----------------------------------------- |
 | `pipenv install` | uses Pipfile and installs listed packages |
+| `pipenv shell --python python3` | create env with specific python version (can be a path as well)|
 
 
 ## docker
