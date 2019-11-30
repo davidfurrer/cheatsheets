@@ -119,6 +119,12 @@
 | ------------------------------------- | --------------------- |
 | `scp -i ssh-key-file file name@ip:~/` | Copy file unto remote |
 
+## Heroku
+
+| Command                               | Description           |
+| ------------------------------------- | --------------------- |
+| `heroku login, heroku create, git push heroku master, heroku ps:scale web=1, heroku open` | deploy app |
+
 
 ## screen
 
