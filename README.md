@@ -34,8 +34,7 @@
 | `cat >> file, ctrl-d to exit`                                | opens editor and saves what you write in file                                          |
 | `cat file1 file2`                                | concatenates files                                          |
 | `more/less file2`                                | pager/scroller for file2                                          |
-  
-  
+| export PATH=/home/pi/.local/bin:$PATH  | add to path in .bashrc |
   
   
 
