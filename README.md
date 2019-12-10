@@ -65,7 +65,7 @@
 | `git checkout -b <branch name> v1.0`                                             | checkout release                                                                                               |
 | `git merge origin/master`                                                        | merge origin/master                                                                                            |
 | `git pull origin`                                                                | same as git fetch origin, git merge origin/master                                                              |
-
+|`git checkout otherbranch myfile.txt` | Copy a file from one branch to another|
 
 
 ## Github: Fixing common mistakes
