@@ -184,3 +184,12 @@
 | ------------------------------------------- | ----------- | ---------------------------------------------------------- |
 | `![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
 
+## Matplotlib
+
+#### Save fig
+```python
+plt.plot(x)
+plt.savefig('name.png', bbox_inches='tight')
+plt.close()
+```
+
