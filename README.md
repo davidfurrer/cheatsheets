@@ -36,6 +36,7 @@
 | `more/less file2`                                | pager/scroller for file2                                          |
 | export PATH=/home/pi/.local/bin:$PATH  | add to path in .bashrc |
 |pkill -u [username] | kill all processes belonging to [username]|
+|`ifconfig | grep inet`|get ip|
   
   
 
