@@ -193,4 +193,7 @@ plt.plot(x)
 plt.savefig('name.png', bbox_inches='tight')
 plt.close()
 ```
-
+### Nice theme
+```
+plt.style.use("fivethirtyeight")
+```
