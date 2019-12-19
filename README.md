@@ -197,3 +197,12 @@ plt.close()
 ```
 plt.style.use("fivethirtyeight")
 ```
+
+### Common Snipptes
+
+```python
+import pandas as pd
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+```
