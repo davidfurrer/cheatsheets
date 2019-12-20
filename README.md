@@ -144,6 +144,7 @@
 | `sox in.wav out4.wav silence 1 0.1 1% -1 0.1 1%`       | Trimming all silence        |
 | `sox in.wav out5.wav silence 1 0.1 1% -1 0.5 1%`       | Trimming all silence, Ignoring short periods of silence      |
 | `sox in.mp3 -b 16 -e signed-integer -r 16000 -t out.wav` | Convert mp3 to wav     |
+| `sox in.wav out.wav remix 1` | only keep 1 channel (if several, e.g. stereo)    |
 
 
 ## pipenv
