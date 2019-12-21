@@ -108,6 +108,17 @@
 | Command                      | Description                        |
 | ---------------------------- | ---------------------------------- |
 | `python -W ignore script.py` | Run python script without warnings |
+| `state = "nice" if is_nice else "not nice"` | ternary operator |
+
+## JavaScript
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `state = isMember ? '$2.00' : '$10.00'` | ternary operator |
+
+
+
+  state = isMember ? '$2.00' : '$10.00'
 
 ## Chrome
 
