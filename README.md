@@ -34,8 +34,9 @@
 | `cat >> file, ctrl-d to exit`                                | opens editor and saves what you write in file                                          |
 | `cat file1 file2`                                | concatenates files                                          |
 | `more/less file2`                                | pager/scroller for file2                                          |
-  
-  
+| export PATH=/home/pi/.local/bin:$PATH  | add to path in .bashrc |
+|pkill -u [username] | kill all processes belonging to [username]|
+|`ifconfig \| grep inet`|get ip|
   
   
 
@@ -65,7 +66,7 @@
 | `git checkout -b <branch name> v1.0`                                             | checkout release                                                                                               |
 | `git merge origin/master`                                                        | merge origin/master                                                                                            |
 | `git pull origin`                                                                | same as git fetch origin, git merge origin/master                                                              |
-
+|`git checkout otherbranch myfile.txt` | Copy a file from one branch to another|
 
 
 ## Github: Fixing common mistakes
@@ -107,6 +108,17 @@
 | Command                      | Description                        |
 | ---------------------------- | ---------------------------------- |
 | `python -W ignore script.py` | Run python script without warnings |
+| `state = "nice" if is_nice else "not nice"` | ternary operator |
+
+## JavaScript
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `state = isMember ? '$2.00' : '$10.00'` | ternary operator |
+
+
+
+  state = isMember ? '$2.00' : '$10.00'
 
 ## Chrome
 
@@ -120,6 +132,12 @@
 | ------------------------------------- | --------------------- |
 | `scp -i ssh-key-file file name@ip:~/` | Copy file unto remote |
 
+## Heroku
+
+| Command                               | Description           |
+| ------------------------------------- | --------------------- |
+| `heroku login, heroku create, git push heroku master, heroku ps:scale web=1, heroku open` | deploy app |
+
 
 ## screen
 
@@ -130,6 +148,14 @@
 | `screen -r`    | reattach session      |
 | `Ctrl + a + d` | detach from session   |
 
+## SoX
+
+| Command        | Description           |
+| -------------- | --------------------- |
+| `sox in.wav out4.wav silence 1 0.1 1% -1 0.1 1%`       | Trimming all silence        |
+| `sox in.wav out5.wav silence 1 0.1 1% -1 0.5 1%`       | Trimming all silence, Ignoring short periods of silence      |
+| `sox in.mp3 -b 16 -e signed-integer -r 16000 -t out.wav` | Convert mp3 to wav     |
+| `sox in.wav out.wav remix 1` | only keep 1 channel (if several, e.g. stereo)    |
 
 
 ## pipenv
@@ -137,6 +163,7 @@
 | Command          | Description                               |
 | ---------------- | ----------------------------------------- |
 | `pipenv install` | uses Pipfile and installs listed packages |
+| `pipenv shell --python python3` | create env with specific python version (can be a path as well)|
 
 
 ## docker
@@ -156,6 +183,14 @@
 | `:q`    | quit            |
 | `:wq`   | save and exit   |
 
+## datetime (python)
+
+| Command | Description     |
+| ------- | --------------- |
+| `datetime.datetime.strptime(d, "%Y-%m-%d_%H-%M-%S")`     | convert string (d) to datetime object  |
+| `dt.strftime("%Y-%m-%d_%H-%M-%S")`    |  convert datetime object (dt) to string         |
+
+
 ## sql
 
 | Command                                                                           | Description              |
@@ -169,3 +204,26 @@
 | ------------------------------------------- | ----------- | ---------------------------------------------------------- |
 | `![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
 
+## Matplotlib
+
+#### Save fig
+```python
+plt.plot(x)
+plt.savefig('name.png', bbox_inches='tight')
+plt.close()
+```
+### Nice theme
+```
+plt.style.use("fivethirtyeight")
+```
+
+### Common Snipptes
+
+```python
+import pandas as pd
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('')
+```
