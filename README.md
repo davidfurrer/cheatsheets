@@ -67,7 +67,7 @@
 | `git merge origin/master`                                                        | merge origin/master                                                                                            |
 | `git pull origin`                                                                | same as git fetch origin, git merge origin/master                                                              |
 |`git checkout otherbranch myfile.txt` | Copy a file from one branch to another|
-
+|`git remote set-url origin NEW_URL`| change remote url|
 
 ## Github: Fixing common mistakes
 
