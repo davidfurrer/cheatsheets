@@ -101,7 +101,8 @@
 | `command-J`       | Collapse/ bring back terminal   |
 | `:32 (in search)` | Jump to line 32                 |
 
-
+More vs code shortcuts:
+https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 
 ## Python
 
