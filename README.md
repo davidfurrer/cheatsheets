@@ -5,6 +5,7 @@
 | Command                                   | Description                                                 |
 | ----------------------------------------- | ----------------------------------------------------------- |
 | `df -h /`                                 | Show total free disk space                                  |
+| `ls -haltr`                               | list files by date (human readable, reversed)               |
 | `du -sh folder`                           | Show size of folder                                         |
 | `ls \| wc -l`                             | Number of files in folder                                   |
 | `rm -r mydir`                             | Delete folder                                               |
