@@ -1,0 +1,23 @@
+{
+	"for loop python": {
+		"prefix": "for",
+		"body": [
+			"for i in range($1):",
+			"   $2"
+		],
+		"description": "for loop python"
+    },
+    "imports data science": {
+		"prefix": "import-ds",
+		"body": [
+			"import pandas as pd",
+            "import numpy as np",
+            "import os",
+            "import matplotlib.pyplot as plt",
+            "plt.style.use(\"fivethirtyeight\")",
+            "",
+            "df = pd.read_csv('$1')"
+		],
+		"description": "common imports for data sciece"
+	}
+}
