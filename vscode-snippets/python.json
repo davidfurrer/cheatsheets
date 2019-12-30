@@ -18,6 +18,6 @@
             "",
             "df = pd.read_csv('$1')"
 		],
-		"description": "common imports for data sciece"
+		"description": "common imports for data science"
 	}
 }
