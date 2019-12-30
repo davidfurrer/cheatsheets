@@ -19,5 +19,14 @@
             "df = pd.read_csv('$1')"
 		],
 		"description": "common imports for data science"
-	}
+    },
+    "matplotlib save": {
+		"prefix": "plt-save",
+		"body": [
+			"plt.plot(x)",
+            "plt.savefig(\"$1\", bbox_inches=\"tight\")",
+            "plt.close()"
+		],
+		"description": "template for saving matplotlib figure"
+    }
 }
