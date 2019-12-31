@@ -5,6 +5,21 @@ Change in settings:
 "editor.tabCompletion": "on"
 ```
 
+```
+"editor.snippetSuggestions": "top"
+```
+
+```
+"editor.quickSuggestions": true
+```
+
+```
+"[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
+  }
+```
+
 ## Usage
 
 ![](vs-code-snippet.gif)
@@ -26,4 +41,3 @@ Change in settings:
 		"description": "common imports for data science"
 	}
 ```
-

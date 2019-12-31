@@ -1,0 +1,27 @@
+{
+	"table-markdown": {
+		"prefix": "table-markdown",
+		"body": [
+			"| Command           | Description                     |",
+			"| ----------------- | ------------------------------- |",
+			"|  `$1`             | $2                              |"
+		],
+		"description": "insert markdown table"
+	},
+	"table markdown add row": {
+		"prefix": "row-table-markdown",
+		"body": [
+		"|  `$1`             | $2                              |"
+		],
+		"description": "insert row markdown table"
+	},
+	"code block": {
+		"prefix": "code-block",
+		"body": [
+		"```",
+		"$1",
+		"```"
+		],
+		"description": "insert code block"
+	}
+}
