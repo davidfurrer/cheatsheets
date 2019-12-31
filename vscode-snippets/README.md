@@ -26,7 +26,7 @@ Location:
 
 ## Usage
 
-![](vs-code-snippet.gif)
+![](https://media.giphy.com/media/iIYZ3ZQx4n7WutK6np/giphy.gif)
 
 ## JSON for Example above
 
