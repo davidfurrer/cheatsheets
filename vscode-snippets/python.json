@@ -23,7 +23,6 @@
     "matplotlib save": {
 		"prefix": "plt-save",
 		"body": [
-			"plt.plot(x)",
             "plt.savefig(\"$1\", bbox_inches=\"tight\")",
             "plt.close()"
 		],
