@@ -28,5 +28,107 @@
             "plt.close()"
 		],
 		"description": "template for saving matplotlib figure"
-    }
+    },
+    "os modified": {
+		"prefix": "os-modified",
+		"body": [
+			"from datetime import datetime",
+            "mod_time = os.stat(\"$1\").st_mtime",
+            "datetime.fromtimestamp(mod_time)"
+		],
+		"description": "gets datetime of when file was last modified"
+    },
+    "os find": {
+		"prefix": "os-find",
+		"body": [
+			"for dirpath, dirnames, filenames in os.walk(\"$1\"):",
+            "    if \"$2\" in filenames:",
+            "        print(dirpath)"
+		],
+		"description": "finds file in folder with subfolders"
+    },
+	"os join": {
+		"prefix": "os-join",
+		"body": [
+			"$1 = os.path.join(os.getcwd(), \"$2\")"
+		],
+		"description": "joins paths"
+	},
+	"os base": {
+		"prefix": "os-base",
+		"body": [
+			"$1 = os.path.basename($2)"
+		],
+		"description": "shows test.txt for /temp/test.txt"
+	},
+	"os dir": {
+		"prefix": "os-dir",
+		"body": [
+			"$1 = os.path.dirname($2)"
+		],
+		"description": "shows /temp for /temp/test.txt"
+	},
+	"os check": {
+		"prefix": "os-check",
+		"body": [
+			"if not os.path.exists($1):",
+			"    os.makedirs($1)"
+		],
+		"description": "creates path if it does not exist"
+	},
+	"sns facet scatter": {
+		"prefix": "sns-facet-scatter",
+		"body": [
+			"sns.set_style(\"white\")",
+			"g = sns.FacetGrid(df, col=\"class\", col_wrap=3)",
+			"g = g.map(plt.scatter, \"displ\", \"hwy\")",
+			"",
+			"for ax, (name, group) in zip(g.axes.flat, grouped):",
+			"    ax.set_title(name)",
+			"g.fig.suptitle('Figure Title', y =1.04)"
+		],
+		"description": "sns faceted scatter"
+	},
+	"plt facet scatter v1": {
+		"prefix": "plt-facet-scatter-v1",
+		"body": [
+			"fig, axes = plt.subplots()",
+			"for i, (name, group) in enumerate(grouped):",
+			"    plt.subplot(3, 3, i + 1)",
+			"    plt.scatter(group['displ'], group['hwy'])",
+			"    plt.title(name)",
+			"fig.set_size_inches(15.5, 10)"
+		],
+		"description": "plt faceted scatter v1"
+	},
+	"plt facet scatter v2": {
+		"prefix": "plt-facet-scatter-v2",
+		"body": [
+			"fig, axes = plt.subplots(ncols = 3, nrows = 3)",
+			"",
+			"for i, (ax, (name, group)) in enumerate(zip(axes.flat, grouped)):",
+			"    ax.scatter(group['displ'], group['hwy'])",
+			"    ax.set_title(name)",
+			"    if i in [4, 5, 6]:",
+			"        ax.set_xlabel('displ')",
+			"    if i in [0, 3, 6]:",
+			"        ax.set_ylabel('hwy')",
+			"",    
+			"fig.set_size_inches(15.5, 10)",
+			"fig.delaxes(axes[2,1])",
+			"fig.delaxes(axes[2,2])"
+		],
+		"description": "plt faceted scatter v2"
+	},
+	"plt stack scatter v1": {
+		"prefix": "plt-stack-scatter-v1",
+		"body": [
+			"fig, ax = plt.subplots()",
+			"",
+			"for i, (name, group) in enumerate(df.groupby('class')):",
+			"    ax.scatter(group['displ'], group['hwy'], label = name)",
+			"plt.legend()"
+		],
+		"description": "plt stack scatter v1"
+	}
 }
