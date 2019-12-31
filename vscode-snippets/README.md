@@ -19,6 +19,10 @@ Change in settings:
     "editor.quickSuggestions": true
   }
 ```
+Location:
+
+
+`~/Library/Application Support/Code/User/snippets/markdown.json`
 
 ## Usage
 
