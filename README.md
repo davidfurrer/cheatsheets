@@ -193,6 +193,13 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | `dt.strftime("%Y-%m-%d_%H-%M-%S")`    |  convert datetime object (dt) to string         |
 
 
+## re (python)
+
+| Command | Description     |
+| ------- | --------------- |
+| `re.sub('[^a-zA-Z]+', '', string)`     | only keep alphabetical characters  |
+
+
 ## sql
 
 | Command                                                                           | Description              |
