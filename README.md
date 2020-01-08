@@ -200,7 +200,11 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | `re.sub('[^a-zA-Z]+', '', string)`     | only keep alphabetical characters  |
 | `bool(re.search('is', 'is it'))`     | check if string matches pattern  |
 
+## kubeflow
 
+| Command | Description     |
+| ------- | --------------- |
+| `kubectl get pods`     | list pods  |
 
 
 ## sql
