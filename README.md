@@ -206,6 +206,22 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | ------- | --------------- |
 | `kubectl get pods`     | list pods  |
 
+## nvidia GPU
+
+| Command | Description     |
+| ------- | --------------- |
+| `sudo nvidia-smi --gpu-reset -i 0`     | reset gpu if usage high  |
+| `sudo fuser -v /dev/nvidia*`     | check which processes might be using the GPU |
+
+1. log out of the username that issued the interrupted work to that gpu
+
+2. as root, find all running processes associated with the username that issued the interrupted work on that gpu:
+
+ps -ef|grep username
+
+3. as root, kill all of those
+
+4. as root, retry the nvidia-smi gpu reset
 
 ## sql
 
