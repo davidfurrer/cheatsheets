@@ -249,6 +249,14 @@ plt.close()
 plt.style.use("fivethirtyeight")
 ```
 
+## Define figure size
+
+```
+fig = plt.figure(figsize=(18,3))
+ax = fig.add_subplot(1, 1, 1)
+ax.plot(x)
+```
+
 ### Common Snipptes
 
 ```python
