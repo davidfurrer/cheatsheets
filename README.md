@@ -133,7 +133,7 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | Command                               | Description           |
 | ------------------------------------- | --------------------- |
 | `scp -i ssh-key-file file name@ip:~/` | Copy file unto remote |
-| `saws ecr get-login --no-include-email --region us-west-1` | login into ECR |
+| `aws ecr get-login --no-include-email --region us-west-1` | login into ECR |
 
 
 ## Heroku
