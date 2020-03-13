@@ -269,3 +269,11 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('')
 ```
+
+### Reshaping model inputs
+
+#### e.g. batched LSTM
+```
+[(None, None, x), (None, None, y)] 
+ model.predict([df1.values.reshape(1, -1, x), df2.values.reshape(1, -1, y)])
+```
