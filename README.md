@@ -277,3 +277,8 @@ df = pd.read_csv('')
 [(None, None, x), (None, None, y)] 
  model.predict([df1.values.reshape(1, -1, x), df2.values.reshape(1, -1, y)])
 ```
+
+### Loading h5 file
+```
+tf.keras.models.load_model(model_path, custom_objects={'keras': tf.keras, 'tf': tf}, compile=False)
+```
