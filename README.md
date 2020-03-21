@@ -287,10 +287,10 @@ tf.keras.models.load_model(model_path, custom_objects={'keras': tf.keras, 'tf': 
 ```
 from joblib import Parallel, delayed
 
-    def process_files(key):
-        # do stuff
+def process_files(key):
+    # do stuff
 
-    Parallel(n_jobs=4)(delayed(process_files)(key) for key in tqdm.tqdm(key_list))
+Parallel(n_jobs=4)(delayed(process_files)(key) for key in tqdm.tqdm(key_list))
 ```
 
 
