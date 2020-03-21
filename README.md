@@ -282,3 +282,16 @@ df = pd.read_csv('')
 ```
 tf.keras.models.load_model(model_path, custom_objects={'keras': tf.keras, 'tf': tf}, compile=False)
 ```
+
+### multi-processing
+```
+from joblib import Parallel, delayed
+
+    def process_files(key):
+        # to stuff
+
+    Parallel(n_jobs=4)(delayed(process_files)(key) for key in tqdm.tqdm(key_list))
+```
+
+
+
