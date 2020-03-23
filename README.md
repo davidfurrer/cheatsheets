@@ -312,4 +312,9 @@ Parallel(n_jobs=4)(delayed(process_files)(key) for key in tqdm.tqdm(key_list))
 ```
 
 
+## seaborn
+
+| Command | Description     |
+| ------- | --------------- |
+| `ax = sns.scatterplot(x="total_bill", y="tip", data=tips)`     | scatter  |
 
