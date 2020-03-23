@@ -238,6 +238,24 @@ ps -ef|grep username
 | ------------------------------------------- | ----------- | ---------------------------------------------------------- |
 | `![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif)` | insert gif  | ![](https://media.giphy.com/media/WZ4M8M2VbauEo/giphy.gif) |
 
+
+## jupyter
+
+| Command | Description     |
+| ------- | --------------- |
+| `jupyter notebook --no-browser --port=8881`     | on remote  |
+| `ssh -N -f -L localhost:8882:localhost:8881 ubuntu@<instance_IP> -i ~/.ssh/<aws-key-file>.pem`     | locally  |
+
+
+## tensorboard  
+
+| Command | Description     |
+| ------- | --------------- |
+| `tensorboard --logdir logs/models/ &> logs/tboard.log & disown`     | launch tensorbard (port 6006)  |
+| `tensorboard --logdir artifacts &> logs/tboard.log & disown`     | launch tensorbard (port 6006), different folder  |
+
+
+
 ## Matplotlib
 
 #### Save fig
