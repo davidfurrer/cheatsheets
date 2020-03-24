@@ -135,6 +135,7 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | ---------------------------- | ---------------------------------- |
 | `poetry new <project-name>` | start new project, creates the project folder at the same time |
 | `poetry add numpy` | add a package |
+| `poetry init` | create toml |
 | `poetry install` | install dependencies from poetry.lock file |
 | `poetry build` | prepare own package for publishing |
 | `poetry publish` | publish to PyPI |
