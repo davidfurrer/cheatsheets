@@ -118,6 +118,14 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | ---------------------------- | ---------------------------------- |
 | `state = isMember ? '$2.00' : '$10.00'` | ternary operator |
 
+## zsh
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggetsions` | get autocompletion (right-arrow to complete) |
+| `source ~/.zsh/zsh-autosuggetions/zsh-autosuggestions.zsh` | activate |
+
+https://github.com/zsh-users/zsh-autosuggestions
 
 ## Conda
 
