@@ -124,6 +124,10 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | ---------------------------- | ---------------------------------- |
 | `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggetsions` | get autocompletion (right-arrow to complete) |
 | `source ~/.zsh/zsh-autosuggetions/zsh-autosuggestions.zsh` | activate |
+| `plugins=(zsh-autosuggestions)` | add in ~/.zshrc  |
+
+
+
 
 https://github.com/zsh-users/zsh-autosuggestions
 
