@@ -119,14 +119,41 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | `state = isMember ? '$2.00' : '$10.00'` | ternary operator |
 
 
+## Conda
 
-  state = isMember ? '$2.00' : '$10.00'
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `conda create -n myenv python=3.6` | create conda environment with specific python version |
+| `conda env list` | list all environments |
+| `conda env remove --name <env-name>` | remove environment |
 
-## Chrome
+
+
+## poetry (python)
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `poetry new <project-name>` | start new project, creates the project folder at the same time |
+| `poetry add numpy` | add a package |
+| `poetry install` | install dependencies from poetry.lock file |
+| `poetry build` | prepare own package for publishing |
+| `poetry publish` | publish to PyPI |
+| `poetry config http-basic.pypi username password` | setup PyPI credentials |
+| `poetry shell` | launches shell | 
+| `poetry run python script.py` | run python script within poetry env | 
+| `poetry self update` | update |
+
+
+
+
+You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies.
+ 
+ ## Chrome
 
 | Command     | Description  |
 | ----------- | ------------ |
 | `command-R` | Refresh page |
+| `option-command left/right-arrow` | switch tabs |
 
 ## AWS
 
