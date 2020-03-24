@@ -122,7 +122,7 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 
 | Command                      | Description                        |
 | ---------------------------- | ---------------------------------- |
-| `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions) | add autosuggestion |
+| `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions)` | add autosuggestion |
 | `plugins=(zsh-autosuggestions)` | add in ~/.zshrc  |
 
 
