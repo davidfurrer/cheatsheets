@@ -40,7 +40,6 @@
 |`ifconfig \| grep inet`|get ip|
   
   
-test
 
 ## Github
 
@@ -136,6 +135,11 @@ https://github.com/zsh-users/zsh-autosuggestions
 | `conda env list` | list all environments |
 | `conda env remove --name <env-name>` | remove environment |
 
+## google docs
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `Ctrl + Shift + V` | copy paste withough formatting |
 
 
 ## poetry (python)
