@@ -307,13 +307,13 @@ plt.savefig('name.png', bbox_inches='tight')
 plt.close()
 ```
 ### Nice theme
-```
+```python
 plt.style.use("fivethirtyeight")
 ```
 
 ## Define figure size
 
-```
+```python
 fig = plt.figure(figsize=(18,3))
 ax = fig.add_subplot(1, 1, 1)
 ax.plot(x)
@@ -333,18 +333,18 @@ df = pd.read_csv('')
 ### Reshaping model inputs
 
 #### e.g. batched LSTM
-```
+```python
 [(None, None, x), (None, None, y)] 
  model.predict([df1.values.reshape(1, -1, x), df2.values.reshape(1, -1, y)])
 ```
 
 ### Loading h5 file
-```
+```python
 tf.keras.models.load_model(model_path, custom_objects={'keras': tf.keras, 'tf': tf}, compile=False)
 ```
 
 ### multi-processing
-```
+```python
 from joblib import Parallel, delayed
 
 def process_files(key):
