@@ -140,6 +140,7 @@ https://github.com/zsh-users/zsh-autosuggestions
 | Command                      | Description                        |
 | ---------------------------- | ---------------------------------- |
 | `Ctrl + Shift + V` | copy paste withough formatting |
+| 1. File -> Spreadsheet settings -> Locale: Switzerland 2. Format -> Number -> Date 3. Sort | sort sheet by European Date |
 
 
 ## poetry (python)
