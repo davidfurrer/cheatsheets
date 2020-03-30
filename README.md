@@ -353,6 +353,27 @@ def process_files(key):
 Parallel(n_jobs=4)(delayed(process_files)(key) for key in tqdm.tqdm(key_list))
 ```
 
+### copy files s3
+
+```python
+import boto3
+s3 = boto3.resource('s3')
+
+for file_name in file_list:
+    s3.Object(<bucket>, f'{destiny}/{file_name}').copy_from(CopySource=f'<bucket>/{file_name}')
+```
+
+### list files s3 bucket
+
+```python
+import boto3
+s3 = boto3.resource('s3')
+
+my_bucket = s3.Bucket('bucket_name')
+
+for file in my_bucket.objects.all():
+    print(file.key)
+```
 
 ## seaborn
 
