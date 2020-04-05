@@ -394,3 +394,43 @@ def foo():
     finally:
         print('finally')
 ```
+
+## Docstrings 
+
+### Google style
+
+```python
+def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
+    """Example function with PEP 484 type annotations.
+    
+    More detailed description of function.
+    
+    Args:
+        param1: The first parameter.
+        param2: The second parameter.
+
+    Returns:
+        The return value. True for success, False otherwise.
+
+    """
+
+
+
+def benchmarkFeed(name: str, target: int, size: int, iters: int) -> float:
+    """Runs a microbenchmark to measure the cost of feeding a tensor.
+
+    Reports the median cost of feeding a tensor of `size` * `sizeof(float)`
+    bytes.
+
+    Args:
+      name: A human-readable name for logging the output.
+      target: The session target to use for the benchmark.
+      size: The number of floating-point numbers to be feed.
+      iters: The number of iterations to perform.
+      
+    Returns:
+      The return value. True for success, False otherwise.
+    """
+```
+
+https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
