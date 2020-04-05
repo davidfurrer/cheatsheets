@@ -484,3 +484,13 @@ def log(message, when=None):
     when=datetime.now() if when is None else when
     print(f'{when}: {message})
 ```
+
+## Open/ write json
+
+```python
+with open('data.txt') as json_file:
+    data = json.load(json_file)
+    
+with open('data.txt', 'w') as outfile:
+    json.dump(data, outfile)
+```
