@@ -458,6 +458,8 @@ class Pet:
 
 ## Star args example (*args)
 
+Optional positional arguments
+
 ```python
 def log(message, *values):
     if not values:
@@ -466,8 +468,9 @@ def log(message, *values):
         value_strings = ', '.join(str(x) for x in values)
         print(f'{message}: {value_strings}')
         
-log('My numbers are', 1, 2)
-log('Hi there')
+log('My numbers are', 1, 2) # My numbers are: 1, 2
+log('Hi there') # Hi there
 favorites = [2, 3, 4]
-log('Favorites', *favorites)
+log('Favorites', *favorites) # Favorites: 2, 3, 4
+log('Favorites', favorites) # Favorites: [2, 3, 4]
 ```
