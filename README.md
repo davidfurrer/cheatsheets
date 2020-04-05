@@ -381,3 +381,16 @@ for file in my_bucket.objects.all():
 | ------- | --------------- |
 | `ax = sns.scatterplot(x="total_bill", y="tip", data=tips)`     | scatter  |
 
+### try/except/else/finally
+
+```python
+def foo():
+    try:
+        1/0
+    except Exception as e:
+        print(f'caught {e} exception')
+    else:
+        print('no exception raised')
+    finally:
+        print('finally')
+```
