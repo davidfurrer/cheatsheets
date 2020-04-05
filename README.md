@@ -455,3 +455,19 @@ class Pet:
     def give_treats(self, count):
         self.treats_eaten += count
 ```
+
+## Star args example (*args)
+
+```python
+def log(message, *values):
+    if not values:
+        print(message)
+    else:
+        value_strings = ', '.join(str(x) for x in values)
+        print(f'{message}: {value_strings}')
+        
+log('My numbers are', 1, 2)
+log('Hi there')
+favorites = [2, 3, 4]
+log('Favorites', *favorites)
+```
