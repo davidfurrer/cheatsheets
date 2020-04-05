@@ -474,3 +474,13 @@ favorites = [2, 3, 4]
 log('Favorites', *favorites) # Favorites: 2, 3, 4
 log('Favorites', favorites) # Favorites: [2, 3, 4]
 ```
+
+## None as default value
+
+Default arguments are only evaluated once: during function definition at module load time. 
+
+```python
+def log(message, when=None):
+    when=datetime.now() if when is None else when
+    print(f'{when}: {message})
+```
