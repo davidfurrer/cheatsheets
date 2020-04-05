@@ -430,13 +430,13 @@ def benchmarkFeed(name: str, target: int, size: int, iters: int) -> float:
     bytes.
 
     Args:
-      name: A human-readable name for logging the output.
-      target: The session target to use for the benchmark.
-      size: The number of floating-point numbers to be feed.
-      iters: The number of iterations to perform.
+        name: A human-readable name for logging the output.
+        target: The session target to use for the benchmark.
+        size: The number of floating-point numbers to be feed.
+        iters: The number of iterations to perform.
       
     Returns:
-      Cost of feeding a tensor.
+        Cost of feeding a tensor.
       
     """
 ```
