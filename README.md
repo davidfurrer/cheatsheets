@@ -494,3 +494,28 @@ with open('data.txt') as json_file:
 with open('data.txt', 'w') as outfile:
     json.dump(data, outfile)
 ```
+
+## webscraping
+
+```python
+from bs4 import BeautifulSoup
+import requests
+
+
+page = requests.get(start_link)
+soup = BeautifulSoup(page.content, 'html.parser')
+
+table = soup.find('table', {'class': 'mega-table'})
+names = table.findAll('td', {'class': 'player-cell'})
+
+namelist = list()
+for name in names:
+    namelist.append(name.get_text())
+```
+
+
+
+
+
+
+
