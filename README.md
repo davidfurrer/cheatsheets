@@ -442,3 +442,16 @@ def benchmarkFeed(name: str, target: int, size: int, iters: int) -> float:
 ```
 
 https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
+
+## Simple class example
+
+```python
+class Pet:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.treats_eaten = 0
+
+    def give_treats(self, count):
+        self.treats_eaten += count
+```
