@@ -411,6 +411,13 @@ def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
 
     Returns:
         The return value. True for success, False otherwise.
+        
+    Examples:
+        Examples should be written in doctest format, and should illustrate how
+        to use the function.
+
+        >>> print([i for i in example_generator(4)])
+        [0, 1, 2, 3]
 
     """
 
@@ -429,7 +436,8 @@ def benchmarkFeed(name: str, target: int, size: int, iters: int) -> float:
       iters: The number of iterations to perform.
       
     Returns:
-      The return value. True for success, False otherwise.
+      Cost of feeding a tensor.
+      
     """
 ```
 
