@@ -514,8 +514,10 @@ for name in names:
 ```
 
 
+## print line
 
-
-
-
+```python
+print_line = "-".center(100, "-")
+print(print_line)
+```
 
