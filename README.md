@@ -542,3 +542,21 @@ from typing import List, Set, Dict, Tuple, Optional
 
 https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 
+## git rebase
+
+```python
+git pull origin master
+git checkout <branch-id>
+git add file.py
+git commit -m 'added file.py'
+git push 
+git checkout master
+git pull
+git checkout <branch-id>
+git rebase -i master
+resolve conflicts
+git push --force
+```
+
+
+
