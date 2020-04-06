@@ -558,5 +558,13 @@ resolve conflicts
 git push --force
 ```
 
+## python linters
+
+flake8, 
+
+## python formatters
+
+black, yapf
+
 
 
