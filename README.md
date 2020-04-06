@@ -521,3 +521,24 @@ print_line = "-".center(100, "-")
 print(print_line)
 ```
 
+## list of types in python
+
+```python
+from typing import List, Set, Dict, Tuple, Optional
+```
+
+
+| type                    | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `None` |  |
+| `bool` |  |
+| `int` |  |
+| `float` |  |
+| `str` |  |
+| `Tuple` |  |
+| `List` |  |
+| `Dict` |  |
+| `pd.DataFrame` |  |
+
+https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
+
