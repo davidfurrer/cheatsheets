@@ -544,7 +544,7 @@ https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 
 ## git rebase
 
-```python
+```
 git pull origin master
 git checkout <branch-id>
 git add file.py
