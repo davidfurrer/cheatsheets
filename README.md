@@ -627,3 +627,15 @@ setup(name='my-package',
       extras_require=extras_required,
       packages=find_packages())
 ```
+
+## PYTHONPATH
+
+PYTHONPATH is an environment variable which you can set to add additional directories where python will look for modules and packages. For most installations, you should not set these variables since they are not needed for Python to run. Python knows where to find its standard library.
+
+The only reason to set PYTHONPATH is to maintain directories of custom Python libraries that you do not want to install in the global default location (i.e., the site-packages directory).
+
+```
+export PYTHONPATH=$PTHONPATH:/Users/…/…/folder
+```
+
+
