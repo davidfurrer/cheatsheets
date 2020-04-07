@@ -596,3 +596,34 @@ blob = bucket.blob("folder_one/foldertwo/filename.extension")
 # Download the file to a destination
 blob.download_to_filename(destination_file_name)
 ```
+
+## make python package
+
+setup.py in package_folder 
+
+then: 
+
+pip/pipenv install -e package_folder
+
+```python
+from setuptools import setup
+from setuptools import find_packages
+
+required = [
+    'pandas',
+    'numpy'
+]
+
+extras_required = dict()
+extras_required['tests'] = ['pytest>=4.0.0',
+                            'pytest-pep8']
+
+setup(name='my-package',
+      version='0.1.0',
+      description='This package contains <>',
+      author='<name>',
+      author_email='',
+      install_requires=required,
+      extras_require=extras_required,
+      packages=find_packages())
+```
