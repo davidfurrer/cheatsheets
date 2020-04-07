@@ -566,5 +566,20 @@ flake8,
 
 black, yapf
 
+## argsparse
+
+```python
+import argparse
+
+def print_word(args):
+    print(args.input)
+    
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Prints the word you pass")
+    parser.add_argument("--input", type=str, required=True, help="word to print")
+    args = parser.parse_args()
+    print_word(args)
+```
+
 
 
