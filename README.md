@@ -111,6 +111,13 @@ https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 | `python -W ignore script.py` | Run python script without warnings |
 | `state = "nice" if is_nice else "not nice"` | ternary operator |
 
+## Python
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `os.path.basename(__file__)` | name of file |
+
+
 ## JavaScript
 
 | Command                      | Description                        |
