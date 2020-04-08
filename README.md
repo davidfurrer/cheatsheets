@@ -645,10 +645,11 @@ The only reason to set PYTHONPATH is to maintain directories of custom Python li
 export PYTHONPATH=$PTHONPATH:/Users/…/…/folder
 ```
 
-## __init__.py
+## \__init\__.py
 
 determines import routing of a module
 
+```
 /src
     /example_pkg
         __init__.py
@@ -658,7 +659,7 @@ determines import routing of a module
     setup.py
     README.md
     LICENSE
-    
+```    
     
 ```python
 # __init__.py
@@ -673,7 +674,6 @@ import example_pkg
 example_pkg.foo_func()
 example_pkg.bar_func()
 example_pkg.baz_func()
-from .baz import *
 ```
 
 alternatively:
