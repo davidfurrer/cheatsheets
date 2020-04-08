@@ -610,7 +610,7 @@ setup.py in package_folder
 
 then: 
 
-pip/pipenv install -e package_folder
+pip install -e package_folder
 
 ```python
 from setuptools import setup
