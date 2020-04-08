@@ -53,12 +53,6 @@
 | `git checkout -b <branch-name>`                                                  | create new branch <branch-name> and switch to it                                                               |
 | `git push origin --delete <branch-name>`                                         | delete remote branch                                                                                           |
 | `git branch -d <branch-name>`                                                    | delete local branch                                                                                            |
-| `git stash save 'message'`                                                       | stash changes (undoes everything up to last commit -> git status will now say nothing to commit)               |
-| `git stash list`                                                                 | list stashes                                                                                                   |
-| `git stash apply stash@{0}`                                                      | restore status of stash, keeps stash                                                                           |
-| `git stash pop`                                                                  | same as git stash apply stash@{0} but drops stash, takes first entry in list (most recent, which has number 0) |
-| `git stash drop stash@{0}`                                                       | deletes stash from list                                                                                        |
-| `git stash, git checkout <branch-name>, git stash pop`                           | stashes carry over to other branches                                                                           |
 | `git rebase -i HEAD~2`                                                           | rewrite last commit message                                                                                    |
 | `git rebase -i HEAD~2, edit, git reset HEAD^, add/commit, git rebase --continue` | split commit message                                                                                           |
 | `git tag v1.0`                                                                   | make tag/release                                                                                               |
@@ -704,4 +698,35 @@ example_pkg.bar.baz_func()
 https://towardsdatascience.com/whats-init-for-me-d70a312da583
 
 
+## git stash
 
+motivation: 
+
+want to save a draft of work but do not want to polute commit history. So roll back to last commit and save new work in stash. Also good if you want to switch branches.
+
+
+```
+# add work
+git stash
+# new work vanishes and code rolls back to last commit
+git stash apply
+# this adds back the work saved in stash
+```
+
+Can have multiple stashes. Each time you run `git stash` another stash is added on top. `git apply` picks top one by default.
+
+```
+git stash list
+git stash apply 2
+```
+
+| Command                                                                          | Description                                                                                                    |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `git stash save 'message'`                                                       | stash changes (undoes everything up to last commit -> git status will now say nothing to commit)               |
+| `git stash list`                                                                 | list stashes                                                                                                   |
+| `git stash apply stash@{0}`                                                      | restore status of stash, keeps stash                                                                           |
+| `git stash pop`                                                                  | same as git stash apply stash@{0} but drops stash, takes first entry in list (most recent, which has number 0) |
+| `git stash drop stash@{0}`                                                       | deletes stash from list                                                                                        |
+| `git stash, git checkout <branch-name>, git stash pop`                           | stashes carry over to other branches                                                                           |
+|`git stash save`|accepts a single non-option argument — the stash message.|
+|`git stash push`|accepts the message with option -m and accepts a list of files to stash as arguments.|
