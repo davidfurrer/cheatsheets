@@ -684,6 +684,14 @@ import example_pkg.foo
 import example_pkg.bar
 import example_pkg.baz
 ```
+or:
+
+```python
+# __init__.py
+from . import foo
+from . import bar
+from . import baz
+```
 
 ```python
 import example_pkg
