@@ -598,6 +598,23 @@ blob = bucket.blob("folder_one/foldertwo/filename.extension")
 blob.download_to_filename(destination_file_name)
 ```
 
+### download folder
+
+```
+bucket_name = 'your-bucket-name'
+prefix = 'your-bucket-directory/'
+dl_dir = 'your-local-directory/'
+
+storage_client = storage.Client()
+bucket = storage_client.get_bucket(bucket_name=bucket_name)
+blobs = bucket.list_blobs(prefix=prefix)  # Get list of files
+for blob in blobs:
+    filename = blob.name.replace('/', '_') 
+    blob.download_to_filename(dl_dir + filename)  # Download
+```
+
+
+
 ## make python package
 
 setup.py in package_folder 
