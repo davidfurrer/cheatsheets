@@ -645,4 +645,55 @@ The only reason to set PYTHONPATH is to maintain directories of custom Python li
 export PYTHONPATH=$PTHONPATH:/Users/…/…/folder
 ```
 
+## __init__.py
+
+determines import routing of a module
+
+/src
+    /example_pkg
+        __init__.py
+        foo.py
+        bar.py
+        baz.py
+    setup.py
+    README.md
+    LICENSE
+    
+    
+```python
+# __init__.py
+from .foo import *
+from .bar import *
+from .baz import *
+```
+
+```python
+import example_pkg
+
+example_pkg.foo_func()
+example_pkg.bar_func()
+example_pkg.baz_func()
+from .baz import *
+```
+
+alternatively:
+
+```python
+# __init__.py
+import example_pkg.foo
+import example_pkg.bar
+import example_pkg.baz
+```
+
+```python
+import example_pkg
+
+example_pkg.foo.foo_func()
+example_pkg.bar.bar_func()
+example_pkg.bar.baz_func()
+```
+
+https://towardsdatascience.com/whats-init-for-me-d70a312da583
+
+
 
