@@ -644,6 +644,12 @@ setup(name='my-package',
       install_requires=required,
       extras_require=extras_required,
       packages=find_packages())
+      
+def get_version():
+    version = '0.1.0'
+    return version
+    
+__version__ = get_version()
 ```
 
 ## PYTHONPATH
@@ -714,6 +720,10 @@ example_pkg.bar.baz_func()
 
 https://towardsdatascience.com/whats-init-for-me-d70a312da583
 
+## \_\_all\_\_
+
+`__all__ = [file1, file2]`
+will be imported by `from my_package import *`
 
 ## git stash
 
@@ -747,3 +757,11 @@ git stash apply 2
 | `git stash, git checkout <branch-name>, git stash pop`                           | stashes carry over to other branches                                                                           |
 |`git stash save`|accepts a single non-option argument — the stash message.|
 |`git stash push`|accepts the message with option -m and accepts a list of files to stash as arguments.|
+
+## difference module and package (python)
+
+|  |      | |
+| ------- | --------------- |--------------- |
+| `module`     |  a single file  | `import my_module` |
+| `package`     | collection of modules in directories that give a package hierarchy  | `from my_package.timing import foo` |
+
