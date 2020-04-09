@@ -686,11 +686,17 @@ setup_args = dict(
 
 install_requires = [
     'elasticsearch>=6.0.0,<7.0.0',
-    'jinja2'
+    'jinja2',
+    'pandas>=0.25.0'
 ]
 
 if __name__ == '__main__':
     setup(**setup_args, install_requires=install_requires)
+```
+
+
+```python
+
 ```
 
 ## PYTHONPATH
@@ -813,11 +819,9 @@ git stash apply 2
 ```python
 setup(
     ...
-    include_package_data=True
+    package_data={'package_name': ['folder1/*', 'folder2/*']}
 )
 ```
-and create MANIFEST.in which includes e.g.: `include src/templates/*`
-
 3) python setup.py sdist bdist_wheel 
 4) twine upload dist/*
 
