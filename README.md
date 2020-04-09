@@ -814,3 +814,4 @@ and create MANIFEST.in which includes e.g.: `include src/templates/*`
 4) twine upload dist/*
 
 [Ref](https://medium.com/@thucnc/how-to-publish-your-own-python-package-to-pypi-4318868210f9)
+[sample project](https://github.com/pypa/sampleproject/blob/master/setup.py)
