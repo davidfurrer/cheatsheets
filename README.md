@@ -652,6 +652,39 @@ def get_version():
 __version__ = get_version()
 ```
 
+```python
+from setuptools import setup, find_packages
+
+with open('README.md') as readme_file:
+    README = readme_file.read()
+
+with open('HISTORY.md') as history_file:
+    HISTORY = history_file.read()
+
+setup_args = dict(
+    name='elastictools',
+    version='0.1.2',
+    description='Useful tools to work with Elastic stack in Python',
+    long_description_content_type="text/markdown",
+    long_description=README + '\n\n' + HISTORY,
+    license='MIT',
+    packages=find_packages(),
+    author='Thuc Nguyen',
+    author_email='gthuc.nguyen@gmail.com',
+    keywords=['Elastic', 'ElasticSearch', 'ElasticStack'],
+    url='https://github.com/ncthuc/elastictools',
+    download_url='https://pypi.org/project/elastictools/'
+)
+
+install_requires = [
+    'elasticsearch>=6.0.0,<7.0.0',
+    'jinja2'
+]
+
+if __name__ == '__main__':
+    setup(**setup_args, install_requires=install_requires)
+```
+
 ## PYTHONPATH
 
 PYTHONPATH is an environment variable which you can set to add additional directories where python will look for modules and packages. For most installations, you should not set these variables since they are not needed for Python to run. Python knows where to find its standard library.
@@ -765,3 +798,19 @@ git stash apply 2
 | `module`     |  a single file  | `import my_module` |
 | `package`     | collection of modules in directories that give a package hierarchy  | `from my_package.timing import foo` |
 
+## Publish package to PyPI
+
+1) add setup.py, __init__.py, licence.txt (MIT)[https://opensource.org/licenses/MIT]
+2) if you want to add data: 
+```python
+setup(
+    ...
+    include_package_data=True
+)
+```
+and create MANIFEST.in which includes e.g.: `include src/templates/*`
+
+3) python setup.py sdist bdist_wheel 
+4) twine upload dist/*
+
+(Ref)[https://medium.com/@thucnc/how-to-publish-your-own-python-package-to-pypi-4318868210f9]
