@@ -800,7 +800,7 @@ git stash apply 2
 
 ## Publish package to PyPI
 
-1) add setup.py, __init__.py, licence.txt (MIT)[https://opensource.org/licenses/MIT]
+1) add setup.py, __init__.py, licence.txt [MIT](https://opensource.org/licenses/MIT)
 2) if you want to add data: 
 ```python
 setup(
@@ -813,4 +813,4 @@ and create MANIFEST.in which includes e.g.: `include src/templates/*`
 3) python setup.py sdist bdist_wheel 
 4) twine upload dist/*
 
-(Ref)[https://medium.com/@thucnc/how-to-publish-your-own-python-package-to-pypi-4318868210f9]
+[Ref](https://medium.com/@thucnc/how-to-publish-your-own-python-package-to-pypi-4318868210f9)
