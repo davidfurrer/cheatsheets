@@ -171,6 +171,14 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `command-R` | Refresh page |
 | `option-command left/right-arrow` | switch tabs |
 
+ ## venv (python)
+
+| Command     | Description  |
+| ----------- | ------------ |
+| `python -m venv_name venv` | make virtual environment |
+| `source venv/bin/activate` | activate virtual environment |
+| `pip install -r requirements.txt` | install packages |
+
 ## AWS
 
 | Command                               | Description           |
