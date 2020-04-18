@@ -102,6 +102,19 @@ Just remove the PATH reset in /etc/sudoers. It's likely a rule called secure_pat
 More vs code shortcuts:
 https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9
 
+common vscode python setup:
+
+```json
+{
+    "python.pythonPath": "/home/david/.local/share/virtualenvs/menu_planner-1CZiAFCI/bin/python",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "yapf",
+    "python.linting.flake8Enabled": true
+}
+```
+
+
+
 ## Python
 
 | Command                      | Description                        |
