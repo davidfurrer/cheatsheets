@@ -39,7 +39,11 @@
 |pkill -u [username] | kill all processes belonging to [username]|
 |`ifconfig \| grep inet`|get ip|
   
-  
+## sudo (linux)
+
+if commands after sudo don't work:
+
+Just remove the PATH reset in /etc/sudoers. It's likely a rule called secure_path
 
 ## Github
 
