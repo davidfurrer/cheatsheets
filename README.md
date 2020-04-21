@@ -401,6 +401,15 @@ for file in my_bucket.objects.all():
     print(file.key)
 ```
 
+### download file from s3
+
+```python
+s3_client = boto3.client('s3')
+s3_client.download_file('MyBucket', 'file_on_remote.txt', 'local_path.txt')
+```
+
+
+
 ## seaborn
 
 | Command | Description     |
