@@ -109,7 +109,8 @@ common vscode python setup:
     "python.pythonPath": "/home/david/.local/share/virtualenvs/menu_planner-1CZiAFCI/bin/python",
     "editor.formatOnSave": true,
     "python.formatting.provider": "yapf",
-    "python.linting.flake8Enabled": true
+    "python.linting.flake8Enabled": true,
+    "files.insertFinalNewline": true
 }
 ```
 
