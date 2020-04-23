@@ -6,46 +6,46 @@
 			"   $2"
 		],
 		"description": "for loop python"
-    },
-    "imports data science": {
+	},
+	"imports data science": {
 		"prefix": "import-ds",
 		"body": [
 			"import pandas as pd",
-            "import numpy as np",
-            "import os",
-            "import matplotlib.pyplot as plt",
-            "plt.style.use(\"fivethirtyeight\")",
-            "",
-            "df = pd.read_csv('$1')"
+			"import numpy as np",
+			"import os",
+			"import matplotlib.pyplot as plt",
+			"plt.style.use(\"fivethirtyeight\")",
+			"",
+			"df = pd.read_csv('$1')"
 		],
 		"description": "common imports for data science"
-    },
-    "matplotlib save": {
+	},
+	"matplotlib save": {
 		"prefix": "plt-save",
 		"body": [
-            "plt.savefig(\"$1\", bbox_inches=\"tight\")",
-            "plt.close()"
+			"plt.savefig(\"$1\", bbox_inches=\"tight\")",
+			"plt.close()"
 		],
 		"description": "template for saving matplotlib figure"
-    },
-    "os modified": {
+	},
+	"os modified": {
 		"prefix": "os-modified",
 		"body": [
 			"from datetime import datetime",
-            "mod_time = os.stat(\"$1\").st_mtime",
-            "datetime.fromtimestamp(mod_time)"
+			"mod_time = os.stat(\"$1\").st_mtime",
+			"datetime.fromtimestamp(mod_time)"
 		],
 		"description": "gets datetime of when file was last modified"
-    },
-    "os find": {
+	},
+	"os find": {
 		"prefix": "os-find",
 		"body": [
 			"for dirpath, dirnames, filenames in os.walk(\"$1\"):",
-            "    if \"$2\" in filenames:",
-            "        print(dirpath)"
+			"    if \"$2\" in filenames:",
+			"        print(dirpath)"
 		],
 		"description": "finds file in folder with subfolders"
-    },
+	},
 	"os join": {
 		"prefix": "os-join",
 		"body": [
@@ -112,7 +112,7 @@
 			"        ax.set_xlabel('displ')",
 			"    if i in [0, 3, 6]:",
 			"        ax.set_ylabel('hwy')",
-			"",    
+			"",
 			"fig.set_size_inches(15.5, 10)",
 			"fig.delaxes(axes[2,1])",
 			"fig.delaxes(axes[2,2])"
@@ -129,5 +129,30 @@
 			"plt.legend()"
 		],
 		"description": "plt stack scatter v1"
+	},
+	"function_doc_string": {
+		"prefix": "function_doc_string",
+		"body": [
+			"    \"\"\"Example function with PEP 484 type annotations.",
+			"    ",
+			"    More detailed description of function.",
+			"    ",
+			"    Args:",
+			"	    param1: The first parameter.",
+			"	    param2: The second parameter.",
+			"    ",
+			"    Returns:",
+			"	    The return value. True for success, False otherwise.",
+			"    ",
+			"    Examples:",
+			"	    Examples should be written in doctest format, and should illustrate how",
+			"	    to use the function.",
+			"    ",
+			"	    >>> print([i for i in example_generator(4)])",
+			"	    [0, 1, 2, 3]",
+			"    ",
+			"    \"\"\""
+		],
+		"description": "function doc string"
 	}
 }
