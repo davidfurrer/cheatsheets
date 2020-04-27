@@ -38,7 +38,7 @@
 | export PATH=/home/pi/.local/bin:$PATH  | add to path in .bashrc |
 |pkill -u [username] | kill all processes belonging to [username]|
 |`ifconfig \| grep inet`|get ip|
-| `alias uc=uncompress`                                | alias a comand                                         |
+|`alias l='ls -AF'`                                | alias a comand                                         |
 
 ## sudo (linux)
 
