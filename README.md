@@ -855,3 +855,16 @@ setup(
 
 [Ref](https://medium.com/@thucnc/how-to-publish-your-own-python-package-to-pypi-4318868210f9)
 [sample project](https://github.com/pypa/sampleproject/blob/master/setup.py)
+
+
+### try except with traceback
+
+```
+import traceback
+import sys
+
+try:
+    do_stuff()
+except Exception:
+    print(traceback.format_exc())
+```
