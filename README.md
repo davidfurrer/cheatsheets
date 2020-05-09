@@ -526,6 +526,12 @@ class Pet:
     def full_name(self):
         return f'{self.first} + {self.last}'
     
+    @full_name.setter:
+    def full_name(self, name):
+        first, last = name.split('')
+        self.first = first
+        self.last = last
+    
     def full_name_v2(self):
         return f'{self.first} + {self.last}'
         
@@ -534,6 +540,7 @@ class Pet:
 
 Pet_1.full_name
 Pet_1.full_name_v2()
+Pet_1.full_name = 'Max Muster'
 
 ```
 
