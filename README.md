@@ -492,6 +492,24 @@ class Pet:
     def give_treats(self, count):
         self.treats_eaten += count
 ```
+## decorator
+
+```python
+import time
+def time_it(func):
+    def wrapper(*args, *kwargs):
+        start = time.time()
+        result = func(*args, *kwargs):
+        end = time.time()
+        print(func.__name__ + " took " result + str((end-start)*1000) + "seconds")
+        return result
+    return wrapper
+
+@time_it
+def print_hello():
+    print('hello')
+
+```
 
 ## Star args example (*args)
 
