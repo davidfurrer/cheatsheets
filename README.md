@@ -511,6 +511,32 @@ def print_hello():
 
 ```
 
+
+## property decorator python
+
+```python
+class Pet:
+    def __init__(self, first, last, age):
+        self.first = first
+        self.last = last
+        self.age = age
+        self.treats_eaten = 0
+    
+    @property
+    def full_name(self):
+        return f'{self.first} + {self.last}'
+    
+    def full_name_v2(self):
+        return f'{self.first} + {self.last}'
+        
+    def give_treats(self, count):
+        self.treats_eaten += count
+
+Pet_1.full_name
+Pet_1.full_name_v2()
+
+```
+
 ## Star args example (*args)
 
 Optional positional arguments
