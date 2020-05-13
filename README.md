@@ -190,6 +190,13 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `command-R` | Refresh page |
 | `option-command left/right-arrow` | switch tabs |
 
+
+ ## ffmpg
+
+| Command     | Description  |
+| ----------- | ------------ |
+| `ffmpeg -i video_no_sound.mp4 -i audio.wav -shortest video_with_audio.mp4` | add audio to video |
+
  ## venv (python)
 
 | Command     | Description  |
