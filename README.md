@@ -196,6 +196,11 @@ You should commit the poetry.lock file to your project repo so that all people w
 | Command     | Description  |
 | ----------- | ------------ |
 | `ffmpeg -i video_no_sound.mp4 -i audio.wav -shortest video_with_audio.mp4` | add audio to video |
+| `ffmpeg -ss 00:01:00 -i input.mp4 -to 00:02:00 -c copy output.mp4` | trim from min 1:00 to min 2:00 |
+
+
+
+
 
  ## venv (python)
 
