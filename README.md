@@ -957,8 +957,11 @@ formatter = logging.formatter('%(levelname)s:%(asctime)s:%(message)s')
 
 file_handler = logging.FileHandler('employee.log')
 file_handler.setFormatter(formatter)
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
 
 logger.basicConfig(filename=logs.log , format='%(levelname)s:%(asctime)s:%(message)s', level=logging.DEBUG)
 
