@@ -963,8 +963,6 @@ stream_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
 
-logger.basicConfig(filename=logs.log , format='%(levelname)s:%(asctime)s:%(message)s', level=logging.DEBUG)
-
 logger.debug('This message should appear on the console')
 logger.info('So should this')
 logger.warning('And this, too')
