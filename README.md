@@ -969,3 +969,18 @@ logger.warning('And this, too')
 Formats:
 
 https://docs.python.org/3/library/logging.html#formatter-objects
+
+To log traceback:
+
+```python
+def divide(x, y):
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        logger.exception('tried to divide by zero')
+    else:
+        return result
+
+```
+
+
