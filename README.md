@@ -206,7 +206,7 @@ You should commit the poetry.lock file to your project repo so that all people w
 
 | Command     | Description  |
 | ----------- | ------------ |
-| `python3 -m venv venv` | make virtual environment |
+| `python3 -m venv venv` | make virtual environment (-m <env_name> <folder_where_to_store_venv>|
 | `source venv/bin/activate` | activate virtual environment |
 | `pip install -r requirements.txt` | install packages |
 
