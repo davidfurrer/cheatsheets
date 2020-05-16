@@ -922,7 +922,7 @@ setup(
 
 ### try except with traceback
 
-```
+```python
 import traceback
 import sys
 
@@ -931,3 +931,19 @@ try:
 except Exception:
     print(traceback.format_exc())
 ```
+
+
+### logging
+
+```python
+import logging
+
+logging.basicConfig(format='%(levelname)s:%(asctime)s:%(message)s', level=logging.DEBUG)
+
+logging.debug('This message should appear on the console')
+logging.info('So should this')
+logging.warning('And this, too')
+```
+Formats:
+
+https://docs.python.org/3/library/logging.html#formatter-objects
