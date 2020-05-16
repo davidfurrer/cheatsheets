@@ -932,8 +932,7 @@ except Exception:
     print(traceback.format_exc())
 ```
 
-
-### logging
+### logging as root
 
 ```python
 import logging
@@ -943,6 +942,29 @@ logging.basicConfig(filename=logs.log , format='%(levelname)s:%(asctime)s:%(mess
 logging.debug('This message should appear on the console')
 logging.info('So should this')
 logging.warning('And this, too')
+```
+
+
+### logging per file
+
+```python
+import logging
+
+logger = logging.get_Logger(__name__)
+logger.setLevel(logging.INFO)
+
+formatter = logging.formatter('%(levelname)s:%(asctime)s:%(message)s')
+
+file_handler = logging.FileHandler('employee.log')
+file_handler.setFormatter(formatter)
+
+logger.addHandler(file_handler)
+
+logger.basicConfig(filename=logs.log , format='%(levelname)s:%(asctime)s:%(message)s', level=logging.DEBUG)
+
+logger.debug('This message should appear on the console')
+logger.info('So should this')
+logger.warning('And this, too')
 ```
 Formats:
 
