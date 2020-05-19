@@ -242,6 +242,9 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `sox in.wav out5.wav silence 1 0.1 1% -1 0.5 1%`       | Trimming all silence, Ignoring short periods of silence      |
 | `sox in.mp3 -b 16 -e signed-integer -r 16000 -t out.wav` | Convert mp3 to wav     |
 | `sox in.wav out.wav remix 1` | only keep 1 channel (if several, e.g. stereo)    |
+| `sox -m in1.wav in2.wav out.wav` | merge 2 audio files    |
+
+
 
 
 ## pipenv
