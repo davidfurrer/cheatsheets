@@ -363,6 +363,22 @@ ax = fig.add_subplot(1, 1, 1)
 ax.plot(x)
 ```
 
+## show every nth xlabel on axis in matplotlib
+
+```python
+x = np.linspace(100, 500, 51, dtype=int)
+
+mydata = pd.DataFrame({'A': np.histogram(np.random.normal(300, 100, 500), bins=x)[0]},
+    index=x[:-1])
+
+ax = mydata.plot.bar()
+for i, t in enumerate(ax.get_xticklabels()):
+    if (i % 5) != 0:
+        t.set_visible(False)
+```
+
+
+
 ### Common Snipptes
 
 ```python
