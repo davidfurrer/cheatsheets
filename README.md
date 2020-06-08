@@ -662,9 +662,14 @@ from typing import List, Set, Dict, Tuple, Optional
 
 
 ```python
-def func(arg: arg_type, optarg: arg_type = default) -> return_type:
+from typing import Union
+
+def func(arg: arg_type, optarg: arg_type = default) -> Union[return_type_1, return_type_2]:
     return pass
 ```
+
+
+
 
 https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 
