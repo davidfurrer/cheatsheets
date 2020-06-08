@@ -660,6 +660,12 @@ from typing import List, Set, Dict, Tuple, Optional
 | `Dict` |  |
 | `pd.DataFrame` |  |
 
+
+```python
+def func(arg: arg_type, optarg: arg_type = default) -> return_type:
+    return pass
+```
+
 https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 
 ## git rebase
