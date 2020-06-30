@@ -697,6 +697,17 @@ resolve conflicts
 git push --force
 ```
 
+## update forked repo with git rebase
+
+```
+git remote add upstream https://github.com/original-repo/goes-here.git
+git fetch upstream
+git rebase upstream/master
+git push origin master --force
+```
+[ref](https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a)
+
+
 ## python linters
 
 flake8, 
