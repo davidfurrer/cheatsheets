@@ -225,6 +225,15 @@ You should commit the poetry.lock file to your project repo so that all people w
 | ------------------------------------- | --------------------- |
 | `heroku login, heroku create, git push heroku master, heroku ps:scale web=1, heroku open` | deploy app |
 
+## pip
+
+| Command        | Description           |
+| -------------- | --------------------- |
+| `pip install git+https://github.com/repo.git`       | install with github link        |
+
+
+
+
 
 ## screen
 
