@@ -128,7 +128,8 @@ common vscode python setup:
 
 | Command                      | Description                        |
 | ---------------------------- | ---------------------------------- |
-| `os.path.basename(__file__)` | name of file |
+| `os.path.basename('/var/lib/db.txt')` | name of file ('db.txt') |
+| `os.path.dirname('/var/lib/db.txt')` | name of file ('/var/lib') |
 
 
 ## JavaScript
