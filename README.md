@@ -1043,4 +1043,26 @@ def divide(x, y):
 
 ```
 
+### running test
+
+```
+pytest -xv test.py
+```
+
+test could contain: 
+
+```python
+#!/usr/bin/env python3
+"""tests for crowsnest.py"""
+
+import os
+from subprocess import getstatusoutput, getoutput
+
+def test_consonant_upper():
+    """brigantine -> a Brigatine"""
+
+    for word in consonant_words:
+        out = getoutput(f'{prg} {word.title()}')
+        assert out.strip() == template.format('a', word.title())
+```
 
