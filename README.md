@@ -1058,6 +1058,8 @@ test could contain:
 import os
 from subprocess import getstatusoutput, getoutput
 
+prg = './your_script.py'
+
 def test_consonant_upper():
     """brigantine -> a Brigatine"""
 
