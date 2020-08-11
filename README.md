@@ -1069,3 +1069,14 @@ def test_consonant_upper():
         assert out.strip() == template.format('a', word.title())
 ```
 
+### regex
+
+```python
+import re
+
+# 
+text = 'hello'
+replacement = 'a'
+print(re.sub('[aeiou]', replacement, text)
+# prints 'halla'
+```
