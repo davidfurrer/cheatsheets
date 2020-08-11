@@ -1074,9 +1074,49 @@ def test_consonant_upper():
 ```python
 import re
 
-# 
+# re.sub()
 text = 'hello'
 replacement = 'a'
 print(re.sub('[aeiou]', replacement, text)
 # prints 'halla'
 ```
+
+
+```python
+import re
+
+# re.match() with groups
+
+def stemmer(word):
+    """Return leading consonants (if any), and 'stem' of word"""
+
+    word = word.lower()
+    vowels = 'aeiou'
+    consonants = ''.join(
+        [c for c in string.ascii_lowercase if c not in vowels])
+    pattern = f'([{consonants}]+)?([{vowels}])(.*)'
+    # capture one or more, optional
+    # capture at least one vowel
+    # capture zero or more of anything
+
+    match = re.match(pattern, word)
+    if match:
+        p1 = match.group(1) or ''
+        p2 = match.group(2) or ''
+        p3 = match.group(3) or ''
+        return (p1, p2 + p3)
+    else:
+        return (word, '')
+        
+        
+ def test_stemmer():
+    """test the stemmer"""
+
+    assert stemmer('') == ('', '')
+    assert stemmer('cake') == ('c', 'ake')
+    assert stemmer('chair') == ('ch', 'air')
+    assert stemmer('APPLE') == ('', 'apple')
+    assert stemmer('RDNZL') == ('rdnzl', '')
+    assert stemmer('123') == ('123', '')
+```
+
