@@ -1081,6 +1081,26 @@ print(re.sub('[aeiou]', replacement, text)
 # prints 'halla'
 ```
 
+```python
+import re
+
+# re.findall()
+text = 'hello2jk3'
+print(re.findall('\d+', text))
+# prints ['2', '3']
+```
+
+
+```python
+import re
+
+# re.search()
+print(re.search('\d+', 'abc123!'))
+# prints <re.Match object; span=(3, 6), match='123'>
+
+print(re.search('\d+', 'abc123!').group())
+# prints '123'
+```
 
 ```python
 import re
@@ -1119,4 +1139,6 @@ def stemmer(word):
     assert stemmer('RDNZL') == ('rdnzl', '')
     assert stemmer('123') == ('123', '')
 ```
+
+
 
