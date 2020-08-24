@@ -289,7 +289,7 @@ You should commit the poetry.lock file to your project repo so that all people w
 | ------- | --------------- |
 | `datetime.datetime.strptime(d, "%Y-%m-%d_%H-%M-%S")`     | convert string (d) to datetime object  |
 | `dt.strftime("%Y-%m-%d_%H-%M-%S")`    |  convert datetime object (dt) to string         |
-
+https://strftime.org/
 
 ## re (python)
 
