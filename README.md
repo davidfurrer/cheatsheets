@@ -1140,5 +1140,30 @@ def stemmer(word):
     assert stemmer('123') == ('123', '')
 ```
 
+## Switch statement (python)
 
+using if, elif, else:
 
+```python
+def switch_dict(x):
+   if x == "a":
+      return 1
+   elif x == "b":
+      return 2
+   elif x == "c":
+      return 3
+   else:
+      return -1
+
+```
+
+using dict:
+
+```python
+def switch_dict(x):
+   return {
+      "a": 1,
+      "b": 2,
+      "c": 3
+   }.get(x, -1)
+```
