@@ -265,6 +265,32 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `pipenv install` | uses Pipfile and installs listed packages |
 | `pipenv shell --python python3` | create env with specific python version (can be a path as well)|
 
+## pipenv and conda on windows
+
+1) create conda with specific python version and install pipenv, e.g.:
+
+```
+conda create -n py37 python=3.7
+conda activate py37
+conda install -c conda-forge pipenv
+```
+
+2) check where python version located on windows:
+
+```python
+import os
+import sys
+os.path.dirname(sys.executable)
+'C:\\Users\\dfurrer\\Miniconda3\\envs\\py37'
+```
+
+3) set up pipenv using the correct python path:
+
+```
+pipenv shell --python=C:\Users\dfurrer\Miniconda3\envs\py37\python.exe
+```
+
+
 
 ## docker
 
