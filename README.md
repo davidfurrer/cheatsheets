@@ -275,7 +275,7 @@ conda activate py37
 conda install -c conda-forge pipenv
 ```
 
-2) check where python version located on windows:
+2) check where python version is located on windows:
 
 ```python
 import os
