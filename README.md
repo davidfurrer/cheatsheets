@@ -886,6 +886,15 @@ The only reason to set PYTHONPATH is to maintain directories of custom Python li
 export PYTHONPATH=$PTHONPATH:/Users/…/…/folder
 ```
 
+Windows:
+
+```
+set PYTHONPATH=%PYTHONPATH%;C:\My_python_lib
+```
+
+To set the PYTHONPATH permanently, add the line to your autoexec.bat. Alternatively, if you edit the system variable through the System Properties, it will also be changed permanently.
+
+
 ## \__init\__.py
 
 determines import routing of a module
