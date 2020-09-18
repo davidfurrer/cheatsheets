@@ -138,6 +138,13 @@ common vscode python setup:
 | ---------------------------- | ---------------------------------- |
 | `state = isMember ? '$2.00' : '$10.00'` | ternary operator |
 
+## yapf
+
+| Command                      | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `yapf -i -r .` | format all files in current folder |
+ 
+
 ## Oh My Zsh
 
 | Command                      | Description                        |
