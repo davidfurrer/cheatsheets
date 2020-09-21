@@ -208,7 +208,9 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `ffmpeg -i example.mkv -c copy -an example-nosound.mkv` | remove audio from video |
 
 
+## pivot pandas table
 
+[ref](https://pandas.pydata.org/docs/user_guide/reshaping.html)
 
 
  ## venv (python)
