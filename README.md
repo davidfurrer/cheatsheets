@@ -435,6 +435,10 @@ rename column:
 df=df.rename(columns = {'old_name':'new_name'})
 ```
 
+fill na in column:
+```python
+df['column'] = df['column'].fillna(0)
+```
 
 ## Matplotlib
 
