@@ -171,6 +171,31 @@ https://github.com/zsh-users/zsh-autosuggestions
 | 1. File -> Spreadsheet settings -> Locale: Switzerland 2. Format -> Number -> Date 3. Sort | sort sheet by European Date |
 
 
+## unicode
+
+Unicode is a specification that aims to list every character used by human languages and give each character its own unique code. The Unicode standard describes how characters are represented by code points. A code point value is an integer in the range 0 to 0x10FFFF (about 1.1 million values, with some 110 thousand assigned so far). The rules for translating a Unicode string into a sequence of bytes are called a character encoding, or just an encoding. UTF-8 is one of the most commonly used encodings.
+
+to decode unicode: 
+```python
+b'\x80abc'.decode("utf-8", "replace")
+```
+to encode (returns a bytes representation of the unicode string):
+```python
+u = chr(40960) + 'abcd' + chr(1972)
+u.encode('utf-8')
+u.encode('ascii')  
+# will give this error: UnicodeEncodeError: 'ascii' codec can't encode character '\ua000' in
+# position 0: ordinal not in range(128)
+```
+
+example using ascii:
+```python
+u'City: Malmö'.encode('ascii', 'ignore').decode('ascii')
+# 'City: Malm'
+```
+
+[ref](https://docs.python.org/3.7/howto/unicode.html)
+
 ## poetry (python)
 
 | Command                      | Description                        |
