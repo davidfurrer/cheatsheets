@@ -428,6 +428,13 @@ df.to_sql('users', con=engine)
 | `tensorboard --logdir artifacts &> logs/tboard.log & disown`     | launch tensorbard (port 6006), different folder  |
 
 
+## pandas
+
+rename column:
+```python
+df=df.rename(columns = {'old_name':'new_name'})
+```
+
 
 ## Matplotlib
 
