@@ -196,6 +196,15 @@ u'City: Malmö'.encode('ascii', 'ignore').decode('ascii')
 
 [ref](https://docs.python.org/3.7/howto/unicode.html)
 
+## ascii
+
+American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices
+
+e.g. R has ascii code 82
+
+[list of all ascii characters](https://www.ionos.com/digitalguide/server/know-how/ascii-codes-overview-of-all-characters-on-the-ascii-table/)
+
+
 ## poetry (python)
 
 | Command                      | Description                        |
