@@ -307,6 +307,9 @@ You should commit the poetry.lock file to your project repo so that all people w
 | ---------------- | ----------------------------------------- |
 | `pipenv install` | uses Pipfile and installs listed packages |
 | `pipenv shell --python python3` | create env with specific python version (can be a path as well)|
+| `pipenv --rm` | remove environment |
+
+
 
 ## pipenv and conda on windows
 
