@@ -1262,5 +1262,4 @@ def switch_dict(x):
 
 ## pandas joins
 
-![](png/joins.png)
-![](png/joins.png)
+![](joins_examples.png)
