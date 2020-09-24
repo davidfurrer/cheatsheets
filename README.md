@@ -1259,3 +1259,7 @@ def switch_dict(x):
       "c": 3
    }.get(x, -1)
 ```
+
+## pandas joins
+
+![](png/joins.png)
