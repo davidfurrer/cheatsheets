@@ -1263,3 +1263,19 @@ def switch_dict(x):
 ## pandas joins
 
 ![](png/joins_examples.png)
+
+## sql
+## make temp table
+
+
+```sql
+WITH temp1 AS (
+SELECT
+x AS xavier,
+y AS yolanda
+FROM `db.table1`,
+)
+
+SELECT * FROM temp1 ORDER BY xavier ASC
+
+```
