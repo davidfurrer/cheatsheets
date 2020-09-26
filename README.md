@@ -952,6 +952,14 @@ set PYTHONPATH=%PYTHONPATH%;C:\My_python_lib
 To set the PYTHONPATH permanently, add the line to your autoexec.bat. Alternatively, if you edit the system variable through the System Properties, it will also be changed permanently.
 
 
+or:
+
+```python
+import sys
+
+sys.path.append('/path/to/the/folder')
+```
+
 ## \__init\__.py
 
 determines import routing of a module
