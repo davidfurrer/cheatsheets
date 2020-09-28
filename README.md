@@ -443,6 +443,22 @@ fill na in column:
 df['column'] = df['column'].fillna(0)
 ```
 
+groupby apply:
+```python
+df = pd.DataFrame({'temperature': [0, 1, 0, 0], 'category': ['A', 'A', 'B', 'B']})
+
+def has_one(x):
+    if x.mean() > 0:
+        return 1
+    else:
+        return 0
+        
+df.groupby('category')['temperature'].apply(lambda x: has_one(x))
+```
+
+
+
+
 ## Matplotlib
 
 #### Save fig
