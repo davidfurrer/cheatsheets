@@ -232,7 +232,14 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `command-R` | Refresh page |
 | `option-command left/right-arrow` | switch tabs |
 
-
+ ## Excel pandas
+ 
+ get all sheet names:
+ ```python
+ df = pandas.read_excel(path, None)
+ print(df.keys())
+ ```
+ 
  ## ffmpg
 
 | Command     | Description  |
