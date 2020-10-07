@@ -324,8 +324,8 @@ insert data into table:
 ```python
 # requires pandas-gbq
 
-df.to_gbq('attribution.test', 
-                 'marketing-288415',
+df.to_gbq('data_set_name.table_name', 
+                 'project-id',
                  chunksize=None, 
                  if_exists='replace' # or append
                  )
