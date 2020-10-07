@@ -1355,3 +1355,10 @@ FROM `db.table1`,
 SELECT * FROM temp1 ORDER BY xavier ASC
 
 ```
+
+## Regex
+
+| symbol  | Description     | example        | example match   |
+| ------- | --------------- |--------------- |--------------- |
+| `^`     | Start of string or start of line depending on multiline mode. (But when [^inside brackets], it means "not") |  ^abc .*    | abc (line start)     |
+| `$`    | End of string or end of line depending on multiline mode            |  .\*? the end$     | this is the end              |
