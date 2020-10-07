@@ -283,8 +283,53 @@ You should commit the poetry.lock file to your project repo so that all people w
 | `pip install git+https://github.com/repo.git`       | install with github link        |
 
 
+## bigquery
 
+create table
 
+```python
+# export GOOGLE_APPLICATION_CREDENTIALS=/home/runner/work/attribution_model/attribution_model/Marketing-acde9a806ac9.json (mac, linux)
+# set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\dfurrer\Documents\MyProjects\keys\Marketing-acde9a806ac9.json (windows)
+
+from google.cloud import bigquery, bigquery_storage_v1beta1
+import google.auth
+
+credentials, your_project_id = google.auth.default(
+    scopes=["https://www.googleapis.com/auth/cloud-platform"])
+# Make clients.
+bqclient = bigquery.Client(
+    credentials=credentials,
+    project=your_project_id,
+)
+bqstorageclient = bigquery_storage_v1beta1.BigQueryStorageClient(
+    credentials=credentials)
+    
+dataset = bqclient.dataset("attribution")
+
+SCHEMA = [
+    bigquery.SchemaField("channel", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("weight", "NUMERIC", mode="REQUIRED"),
+    bigquery.SchemaField("share", "NUMERIC", mode="REQUIRED"),
+    bigquery.SchemaField("start_date", "DATE", mode="REQUIRED"),
+    bigquery.SchemaField("end_date", "DATE", mode="REQUIRED"),
+]
+
+table_ref = dataset.table('test')
+table = bigquery.Table(table_ref, schema=SCHEMA)
+table = bqclient.create_table(table)
+```
+
+insert data into table:
+
+```python
+# requires pandas-gbq
+
+df.to_gbq('attribution.test', 
+                 'marketing-288415',
+                 chunksize=None, 
+                 if_exists='replace' # or append
+                 )
+```
 
 ## screen
 
