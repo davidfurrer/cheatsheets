@@ -1340,8 +1340,8 @@ def switch_dict(x):
 
 ![](png/joins_examples.png)
 
-## sql
-## make temp table
+## sql/bigquery
+### make temp table
 
 
 ```sql
@@ -1355,6 +1355,15 @@ FROM `db.table1`,
 SELECT * FROM temp1 ORDER BY xavier ASC
 
 ```
+
+### dates
+
+convert posix timestamp to zurich date (monthly)
+```sql
+FORMAT_DATE('%Y-%m', DATE(TIMESTAMP_SECONDS(visitStartTime), "Europe/Amsterdam")) AS zurich_date
+```
+
+
 
 ## Regex
 
