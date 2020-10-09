@@ -196,6 +196,13 @@ u'City: Malmö'.encode('ascii', 'ignore').decode('ascii')
 
 [ref](https://docs.python.org/3.7/howto/unicode.html)
 
+## list comprehension
+
+if else:
+```python
+[x+1 if x >= 45 else x+5 for x in l]
+```
+
 ## ascii
 
 American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices
