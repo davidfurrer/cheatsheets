@@ -82,3 +82,46 @@ FROM Produce
 | cabbage   | 9          | vegetable  | 11              |
 | lettuce   | 10         | vegetable  | 21              |
 | kale      | 23         | vegetable  | 44              |
+
+
+
+## cumsum over all items offset by 2
+
+```sql
+SELECT item, purchases, category, SUM(purchases)
+  OVER (
+    ORDER BY purchases
+    ROWS BETWEEN UNBOUNDED PRECEDING AND 2 PRECEDING
+  ) AS total_purchases
+FROM Produce;
+```
+
+| item      | purchases  | category   | total_purchases |
+| --------- | ---------- | ---------- | ---------- |
+| orange    | 2          | fruit      | NULL            |
+| leek      | 2          | vegetable  | NULL            |
+| apple     | 8          | fruit      | 2               |
+| cabbage   | 9          | vegetable  | 4               |
+| lettuce   | 10         | vegetable  | 12              |
+| kale      | 23         | vegetable  | 21              |
+
+
+## Moving Average
+
+```sql
+SELECT item, purchases, category, AVG(purchases)
+  OVER (
+    ORDER BY purchases
+    ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING
+  ) AS avg_purchases
+FROM Produce
+```
+
+| item      | purchases  | category   | avg_purchases   |
+| --------- | ---------- | ---------- | ---------- |
+| orange    | 2          | fruit      | 2               |
+| leek      | 2          | vegetable  | 4               |
+| apple     | 8          | fruit      | 6.33333         |
+| cabbage   | 9          | vegetable  | 9               |
+| lettuce   | 10         | vegetable  | 14              |
+| kale      | 23         | vegetable  | 16.5            |
