@@ -62,6 +62,23 @@ FROM Produce
 | kale      | 23         | vegetable  | 44              |
 
 
+## OVER with cumsum
 
+```sql
+SELECT item, purchases, category, SUM(purchases)
+  OVER (
+    PARTITION BY category
+    ORDER BY purchases
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+  ) AS total_purchases
+FROM Produce
+```
 
-
+| item      | purchases  | category   | total_purchases |
+| --------- | ---------- | ---------- | ---------- |
+| orange    | 2          | fruit      | 2               |
+| apple     | 8          | fruit      | 10              |
+| leek      | 2          | vegetable  | 2               |
+| cabbage   | 9          | vegetable  | 11              |
+| lettuce   | 10         | vegetable  | 21              |
+| kale      | 23         | vegetable  | 44              |
