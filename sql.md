@@ -1,5 +1,6 @@
 # sql concepts
 
+[ref](https://cloud.google.com/bigquery/docs/reference/standard-sql/analytic-function-concepts#compute_a_grand_total)
 
 ## OVER
 
