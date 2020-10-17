@@ -388,3 +388,104 @@ Result:
 | Buchanan   | Mustangs     |
 | ...                       |
 
+
+## LEFT JOIN aka LEFT OUTER JOIN
+
+```sql
+FROM A LEFT OUTER JOIN B ON A.w = B.y
+```
+
+or:
+
+```sql
+FROM A LEFT OUTER JOIN B USING (x)
+```
+
+## chaining joins
+
+```sql
+FROM ( A JOIN (B JOIN C USING (x)) USING (x) )
+```
+
+## WHERE clause
+
+examples:
+
+```sql
+SELECT * FROM Roster
+WHERE SchoolID = 52;
+```
+
+
+```sql
+SELECT * FROM Roster
+WHERE STARTS_WITH(LastName, "Mc") OR STARTS_WITH(LastName, "Mac");
+```
+
+
+## ROLLUP
+
+GROUP BY ROLLUP returns the results of GROUP BY for prefixes of the expressions in the ROLLUP list, each of which is known as a grouping set. For the ROLLUP list (a, b, c), the grouping sets are (a, b, c), (a, b), (a), (). When evaluating the results of GROUP BY for a particular grouping set, GROUP BY ROLLUP treats expressions that are not in the grouping set as having a NULL value
+
+```sql
+WITH Sales AS (
+  SELECT 123 AS sku, 1 AS day, 9.99 AS price UNION ALL
+  SELECT 123, 1, 8.99 UNION ALL
+  SELECT 456, 1, 4.56 UNION ALL
+  SELECT 123, 2, 9.99 UNION ALL
+  SELECT 789, 3, 1.00 UNION ALL
+  SELECT 456, 3, 4.25 UNION ALL
+  SELECT 789, 3, 0.99
+)
+SELECT
+  day,
+  SUM(price) AS total
+FROM Sales
+GROUP BY ROLLUP(day);
+```
+
+The query above outputs a row for each day in addition to the rolled up total across all days, as indicated by a NULL day:
+
+| day  | total |
+|--|--|
+| NULL | 39.77 |
+|    1 | 23.54 |
+|    2 |  9.99 |
+|    3 |  6.24 |
+
+
+## HAVING
+
+Difference to WHERE:
+
+- The HAVING clause requires GROUP BY or aggregation to be present in the query.
+
+- The HAVING clause occurs after GROUP BY and aggregation, and before ORDER BY. This means that the HAVING clause is evaluated once for every aggregated row in the result set. This differs from the WHERE clause, which is evaluated before GROUP BY and aggregation.
+
+```sql
+SELECT LastName
+FROM Roster
+GROUP BY LastName
+HAVING SUM(PointsScored) > 15;
+```
+
+
+## UNION aka UNION ALL
+
+Combine results of 2 queries, ~ pd.concat()
+
+```sql
+SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers
+ORDER BY City;
+```
+
+or 
+
+```sql
+SELECT City FROM Customers
+UNION ALL
+SELECT City FROM Suppliers
+ORDER BY City;
+```
