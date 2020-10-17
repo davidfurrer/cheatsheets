@@ -489,3 +489,52 @@ UNION ALL
 SELECT City FROM Suppliers
 ORDER BY City;
 ```
+
+
+## LIMIT
+
+~ df.head()
+
+```sql
+SELECT *
+FROM UNNEST(ARRAY<STRING>['a', 'b', 'c', 'd', 'e']) AS letter
+ORDER BY letter ASC LIMIT 3 OFFSET 1
+```
+
+| letter  |
+|--|
+| b       |
+| c       |
+| d       |
+
+
+## Select from multiple tables
+
+```sql
+SELECT s.FirstName, s2.SongName
+FROM Singers AS s, (SELECT * FROM Songs) AS s2;
+```
+
+## INTERSECT and EXCEPT
+
+This query returns the last names that are present in both Roster and PlayerStats.
+
+```sql
+SELECT LastName
+FROM Roster
+INTERSECT DISTINCT
+SELECT LastName
+FROM PlayerStats;
+```
+
+The query below returns last names in Roster that are not present in PlayerStats.
+
+```sql
+SELECT LastName
+FROM Roster
+EXCEPT DISTINCT
+SELECT LastName
+FROM PlayerStats;
+```
+
+
