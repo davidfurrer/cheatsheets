@@ -308,3 +308,83 @@ FROM (
 | ---------- | --------- |
 | Fred       | Rogers    |
 | Marie      | Curie     |
+
+
+# joins
+
+## inner joins
+
+```sql
+FROM A INNER JOIN B ON A.w = B.y
+```
+
+
+Table A       Table B       Result
+
+| w | x |  * | | y | z |  =| | w | x | y | z |
+| -- | -- | - |- | -- | --- |-- | - | -- | -- |-- |-- |
+| 1 | a |  |   | 2 | k |  |   | 2 | b | 2 | k |
+| 2 | b |  |   | 3 | m |    | | 3 | c | 3 | m |
+| 3 | c |  |   | 3 | n |  |   | 3 | c | 3 | n |
+| 3 | d |  |   | 4 | p |  |   | 3 | d | 3 | m |
+||||||    |    |                            | 3 | d | 3 | n |
+
+
+if join columns are called same:
+
+```sql
+FROM A INNER JOIN B USING (x)
+```
+
+## Faltten array columns
+
+```sql
+FROM A CROSS JOIN A.y
+```
+
+Table A                    
+    
+| w | x | y         |  
+   | -- |-- |-- | 
+| 1 | a | [P, Q]    |      
+| 2 | b | [R, S, T] |      
+    
+                           
+                           
+                           
+Result
+
+| w | x | y |
+| -- |-- |-- |
+| 1 | a | P |
+| 1 | a | Q |
+| 2 | b | R |
+| 2 | b | S |
+| 2 | b | T |
+
+## Cross join
+
+```sql
+SELECT Roster.LastName, TeamMascot.Mascot
+FROM Roster CROSS JOIN TeamMascot;
+```
+
+|Roster|TeamMascot|
+|--|--|
+|<table> <thead> <tr> <th>LastName </th> <th>SchoolID </th> </tr> </thead> <tbody> <tr> <td>Adams </td> <td>50 </td> </tr> <tr> <td>Buchanan</td> <td>52 </td> </tr> <tr> <td>Coolidge</td> <td>52 </td> </tr> <tr> <td>Davis </td> <td>51 </td> </tr> <tr> <td>Eisenhower </td> <td>77 </td> </tr> </tbody> </table>|<table> <thead> <tr> <th>SchoolID </th> <th>Mascot </th> </tr> </thead> <tbody> <tr> <td>50 </td> <td>Jaguars </td> </tr> <tr> <td>51</td> <td>Knights </td> </tr> <tr> <td>52</td> <td>Lakers </td> </tr> <tr> <td>53 </td> <td>Mustangs </td> </tr> </tbody> </table>|
+
+
+Result:
+
+| LastName   | Mascot       |
+|--|--|
+| Adams      | Jaguars      |
+| Adams      | Knights      |
+| Adams      | Lakers       |
+| Adams      | Mustangs     |
+| Buchanan   | Jaguars      |
+| Buchanan   | Knights      |
+| Buchanan   | Lakers       |
+| Buchanan   | Mustangs     |
+| ...                       |
+
