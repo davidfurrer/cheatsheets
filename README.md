@@ -260,6 +260,17 @@ You should commit the poetry.lock file to your project repo so that all people w
 
 [ref](https://pandas.pydata.org/docs/user_guide/reshaping.html)
 
+from long to wide:
+
+```python
+df.melt(id_vars=['first', 'last'])
+```
+
+from wide to long:
+
+```python
+df_regi.pivot(index='channel' , columns='date', values='weight')
+```
 
  ## venv (python)
 
