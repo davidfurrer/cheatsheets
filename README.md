@@ -477,6 +477,13 @@ from sqlalchemy import create_engine
 engine = create_engine('sqlite://', echo=False)
 df.to_sql('users', con=engine)
 ```
+## writing file python
+
+```python
+with open(“hello.txt”, “w”) as f: 
+    f.write(“Hello World”)
+```
+
 
 ## Markdown
 
