@@ -480,8 +480,8 @@ df.to_sql('users', con=engine)
 ## writing file python
 
 ```python
-with open(“hello.txt”, “w”) as f: 
-    f.write(“Hello World”)
+with open('german_word_list.txt', mode='w', encoding='utf-8') as f:
+    f.write(word_list)
 ```
 
 
