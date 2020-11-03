@@ -272,7 +272,7 @@ from wide to long:
 df_regi.pivot(index='channel' , columns='date', values='weight')
 ```
 
-## ad row at end of dataframe
+## add row at end of dataframe
 
 ```python
 df = pd.DataFrame({'a': [2, 3], 'b': [5, 7]})
