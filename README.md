@@ -272,6 +272,13 @@ from wide to long:
 df_regi.pivot(index='channel' , columns='date', values='weight')
 ```
 
+## ad row at end of dataframe
+
+```python
+df = pd.DataFrame({'a': [2, 3], 'b': [5, 7]})
+df.loc[df.shape[0]+1, :] = [4, 5]
+```
+
  ## venv (python)
 
 | Command     | Description  |
