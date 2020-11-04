@@ -349,9 +349,18 @@ insert data into table:
 ```python
 # requires pandas-gbq
 
+table_schema = [{
+    'name': 'Date',
+    'type': 'date'
+}, {
+    'name': 'Advertiser',
+    'type': 'string'
+}]
+
 df.to_gbq('data_set_name.table_name', 
                  'project-id',
                  chunksize=None, 
+                 table_schema=table_schema,
                  if_exists='replace' # or append
                  )
 ```
