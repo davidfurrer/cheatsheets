@@ -2,6 +2,45 @@
 
 [ref](https://cloud.google.com/bigquery/docs/reference/standard-sql/analytic-function-concepts#compute_a_grand_total)
 
+# Select rows where condition is met for group
+
+| ID      | category  | flag |
+| ------- | --------- | --------- |
+| 1    | A | 1        |
+| 2  | A     | 0         |
+| 3 | A | 0         |
+| 4   | B     | 0         |
+| 5   | C     | 0         |
+
+result:
+
+| ID      | category  | flag |
+| ------- | --------- | --------- |
+| 1    | A | 1        |
+| 2  | A     | 0         |
+| 3 | A | 0         |
+
+
+```sql
+SELECT d.ID, d.category, d.flag
+FROM data d
+WHERE EXISTS (
+    SELECT 1 FROM data WHERE flag = 1 AND category = d.category
+)
+```
+
+or 
+
+```sql
+SELECT d1.ID, d1.category, d1.flag
+FROM data d1
+INNER JOIN (
+    SELECT DISTINCT category FROM data WHERE flag = 1
+) d2 
+    ON d2.category = d1.category
+```
+
+
 ## OVER
 
 ```sql
