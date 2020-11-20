@@ -549,7 +549,13 @@ def has_one(x):
 df.groupby('category')['temperature'].apply(lambda x: has_one(x))
 ```
 
+## write text to file
 
+```python
+with open('data/SPI_TV.txt', 'w') as outfile:
+    outfile.write(l_out_text)
+
+```
 
 
 ## Matplotlib
