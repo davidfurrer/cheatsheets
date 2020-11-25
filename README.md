@@ -422,7 +422,16 @@ os.path.dirname(sys.executable)
 pipenv shell --python=C:\Users\dfurrer\Miniconda3\envs\py37\python.exe
 ```
 
+## try except
 
+```python
+import traceback
+
+try:
+    1/0
+except Exception:
+    traceback.print_exc()
+```
 
 ## docker
 
