@@ -1427,3 +1427,22 @@ FORMAT_DATE('%Y-%m', DATE(TIMESTAMP_SECONDS(visitStartTime), "Europe/Amsterdam")
 | ------- | --------------- |--------------- |--------------- |
 | `^`     | Start of string or start of line depending on multiline mode. (But when [^inside brackets], it means "not") |  ^abc .*    | abc (line start)     |
 | `$`    | End of string or end of line depending on multiline mode            |  .\*? the end$     | this is the end              |
+
+
+## API basics
+
+to query with body:
+
+```
+https://europe-west6-marketing-288415.cloudfunctions.net/hello-world?message=David
+```
+
+```python
+import requests
+
+url = 'https://europe-west6-marketing-288415.cloudfunctions.net/hello-world'
+
+payload = {'message': 'Davd'}
+r = requests.get(url, params=payload)
+print(r.content)
+```
