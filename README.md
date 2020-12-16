@@ -458,6 +458,19 @@ except Exception:
 | `dt.strftime("%Y-%m-%d_%H-%M-%S")`    |  convert datetime object (dt) to string         |
 https://strftime.org/
 
+### resample from daily to weekly
+
+date generated denotes end of week. Goes from Wednesday to Wednesday
+
+```python
+df.resample('W-Wed', label='right', closed = 'right', on='Date').sum().reset_index()
+```
+
+### resample from daily to monthly
+```python
+df.resample('M', on='Date').sum()
+```
+
 ## re (python)
 
 | Command | Description     |
