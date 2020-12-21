@@ -1459,3 +1459,9 @@ payload = {'message': 'Davd'}
 r = requests.get(url, params=payload)
 print(r.content)
 ```
+
+
+## pd.cut vs pd.qcut
+
+
+![](png/cut_vs_qcut.png)
