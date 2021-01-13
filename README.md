@@ -1471,8 +1471,12 @@ print(r.content)
 ## matplotlib timeline
 
 ```python
-df = pd.DataFrame({'date': ['2019-07-14', '2019-02-26', '2018-01-10', '2018-11-10'], 'text': ['a', 'b', 'c', 'd'], 'y_pos': [1, 0.9, 0.8, 0.7]})
+df = pd.DataFrame({'date': ['2019-07-14', '2019-02-26', '2018-01-10', '2018-11-10'], 
+                   'text': ['a', 'b', 'c', 'd'], 
+                   'y_pos': [1, 0.9, 0.8, 0.7]})
+
 df['date'] = [datetime.datetime.strptime(x, "%Y-%m-%d") for x in df['date']]
+
 df.head()
 ```
 ![](png/df_head.png)
