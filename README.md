@@ -1510,7 +1510,7 @@ for spine in ["left", "top", "right"]:
 ax.margins(y=0.1)
 plt.show()
 ```
-![](png/timeline.png)
+![](png/timeline2.png)
 
 
 
