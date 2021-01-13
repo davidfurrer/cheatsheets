@@ -1466,3 +1466,48 @@ print(r.content)
 
 
 ![](png/cut_vs_qcut.png)
+
+
+## matplotlib timeline
+
+```python
+df = pd.DataFrame({'date': ['2019-07-14', '2019-02-26', '2018-01-10', '2018-11-10'], 'text': ['a', 'b', 'c', 'd'], 'y_pos': [1, 0.9, 0.8, 0.7]})
+df['date'] = [datetime.datetime.strptime(x, "%Y-%m-%d") for x in df['date']]
+df.head()
+```
+![](png/df_head.png)
+
+```python
+fig, ax = plt.subplots(figsize=(18, 4), constrained_layout=True)
+fig.suptitle('Competition')
+
+ax.vlines(df['date'], 0, df['y_pos'], color="tab:red")  # The vertical stems.
+
+ax.plot(df['date'], np.zeros_like(df['date']), "-o",
+        color="k", markerfacecolor="w")  # Baseline and markers on it.
+
+# annotate lines
+for d, y, text in zip(df['date'], df['y_pos'], df['text']):
+    ax.annotate(text + '\n' + d.strftime("%d.%b %Y"), xy=(d, y),
+                xytext=(-3, np.sign(y)*3), textcoords="offset points",
+                horizontalalignment="left",
+                verticalalignment="bottom" if y > 0 else "top")
+
+# format xaxis with 4 month intervals
+ax.get_xaxis().set_major_locator(mdates.MonthLocator(interval=1))
+ax.get_xaxis().set_major_formatter(mdates.DateFormatter("%b %Y"))
+#plt.setp(ax.get_xticklabels(), rotation=20, ha="right")
+
+## remove y axis and spines
+ax.get_yaxis().set_visible(False)
+for spine in ["left", "top", "right"]:
+    ax.spines[spine].set_visible(False)
+
+ax.margins(y=0.1)
+plt.show()
+```
+![](png/timeline.png)
+
+
+
+
