@@ -1479,7 +1479,7 @@ df['date'] = [datetime.datetime.strptime(x, "%Y-%m-%d") for x in df['date']]
 
 df.head()
 ```
-![](png/df_head.png)
+![](png/df_head.PNG)
 
 ```python
 fig, ax = plt.subplots(figsize=(18, 4), constrained_layout=True)
