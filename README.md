@@ -1516,4 +1516,14 @@ plt.show()
 
 
 
+## Google Data Studio
 
+calculated field, case when
+
+```sql
+CASE 
+WHEN REGEXP_MATCH(Ad, '.*book.*') THEN "Book of Ra"
+WHEN REGEXP_MATCH(Ad, '.*blackjack.*') THEN "Blackjack"
+ELSE "generic"
+END
+```
