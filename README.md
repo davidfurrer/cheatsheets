@@ -1413,6 +1413,19 @@ def switch_dict(x):
 ![](png/joins_examples.png)
 
 ## sql/bigquery
+
+```sql
+from pandas import read_csv
+from dataframe_sql import register_temp_table, query
+
+my_table = read_csv("some_file.csv")
+
+register_temp_table(my_table, "my_table")
+
+query("""select * from my_table""")
+```
+
+
 ### make temp table
 
 
