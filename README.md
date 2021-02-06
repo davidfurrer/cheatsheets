@@ -434,6 +434,18 @@ except Exception:
     traceback.print_exc()
 ```
 
+## pipenv and jupyter lab
+
+```python
+pipenv shell
+pipenv install ipykernel jupyterlab
+python -m ipykernel install --user --name=my_new_kernel
+jupyter lab
+```
+
+then select my_new_kernel in jupyter lab as kernel
+
+
 ## docker
 
 | Command                                      | Description                   |
