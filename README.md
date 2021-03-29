@@ -1571,3 +1571,11 @@ WHEN REGEXP_MATCH(Ad, '.*blackjack.*') THEN "Blackjack"
 ELSE "generic"
 END
 ```
+
+## Qlik Sense
+
+
+convert number to date:
+```
+=Date(date_col, 'YYYY-MM-DD')
+```
