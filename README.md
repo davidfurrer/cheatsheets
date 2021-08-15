@@ -116,7 +116,6 @@ common vscode python setup:
 ```
 
 
-
 ## Python
 
 | Command                      | Description                        |
